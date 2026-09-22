@@ -53,7 +53,7 @@ export default function SiteFooter() {
           <p className="footer-tagline" style={{ color: '#841617' }}>Build. Automate. Grow.</p>
           <p className="footer-description" style={{ color: 'rgba(255,255,255,0.60)' }}>Revenue Infrastructure for founder-led service businesses.</p>
           <address className="footer-contact-list">
-            <a href="mailto:clayton@growthworks-systems.com"><Mail size={14} aria-hidden="true" />clayton@growthworks-systems.com</a>
+            <a href="mailto:info@growthworks-systems.com"><Mail size={14} aria-hidden="true" />info@growthworks-systems.com</a>
             <a href="tel:+12143027720"><Phone size={14} aria-hidden="true" />214–302–7720</a>
             <a href="https://www.linkedin.com/in/clayton-tidwell-11a2525/" target="_blank" rel="noopener noreferrer"><Linkedin size={14} aria-hidden="true" />LinkedIn</a>
           </address>

@@ -763,13 +763,13 @@ function ClosingCTASection() {
               Explore the Framework
             </a>
             <a
-              href="mailto:clayton@growthworks-systems.com"
+              href="mailto:info@growthworks-systems.com"
               className="transition-colors"
               style={{ color: 'rgba(255,255,255,0.40)' }}
               onMouseEnter={(e) => { e.currentTarget.style.color = 'rgba(255,255,255,0.70)'; }}
               onMouseLeave={(e) => { e.currentTarget.style.color = 'rgba(255,255,255,0.40)'; }}
             >
-              clayton@growthworks-systems.com
+              info@growthworks-systems.com
             </a>
             <a
               href="tel:+12143027720"
