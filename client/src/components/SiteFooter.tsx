@@ -9,7 +9,7 @@ const footerGroups = [
   { title: "Revenue Infrastructure", links: ["What Is Revenue Infrastructure?", "The Nine Domains", "Maturity Model", "Why GWS Is Different"] },
   { title: "Solutions", links: ["AI Visibility", "AI-Ready Website", "CRM & Automation", "Conversion Systems", "All Solutions"] },
   { title: "Industries", links: ["Home Services", "Financial Advisors & RIAs", "Insurance Agencies"] },
-  { title: "Company", links: ["About GWS", "Resources", "Contact", "Book a Revenue Diagnostic"] },
+  { title: "Company", links: ["About GWS", "Resources", "Contact", "Book a Revenue Diagnostic", "Privacy Policy", "Terms & Conditions"] },
 ] as const;
 
 function FooterLink({ href, children }: { href?: string; children: React.ReactNode }) {
@@ -31,6 +31,8 @@ function FooterLink({ href, children }: { href?: string; children: React.ReactNo
     text === "Insurance Agencies" ? "/insurance-agencies" :
     text === "About GWS" ? "/about" :
     text === "Resources" ? "/resources" :
+    text === "Privacy Policy" ? "/privacy" :
+    text === "Terms & Conditions" ? "/terms" :
     "/"
   )
   const handleClick = () => {
