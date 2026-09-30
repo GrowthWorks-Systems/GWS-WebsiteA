@@ -21,6 +21,8 @@ import InsuranceAgencies from "@/pages/InsuranceAgencies";
 import Resources from "@/pages/Resources";
 import About from "@/pages/About";
 import Home from "@/pages/Home";
+import PrivacyPolicy from "@/pages/PrivacyPolicy";
+import TermsConditions from "@/pages/TermsConditions";
 import SiteHeader from "@/components/SiteHeader";
 import TableOfContents from "@/components/TableOfContents";
 import { Route, Switch, useLocation } from "wouter";
@@ -49,6 +51,8 @@ function Routes() {
       <Route path={"/insurance-agencies"} component={InsuranceAgencies} />
       <Route path={"/resources"} component={Resources} />
       <Route path={"/about"} component={About} />
+      <Route path={"/privacy"} component={PrivacyPolicy} />
+      <Route path={"/terms"} component={TermsConditions} />
       <Route path={"/404"} component={NotFound} />
       <Route component={NotFound} />
     </Switch>
