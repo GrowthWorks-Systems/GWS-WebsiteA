@@ -77,9 +77,23 @@ function SectionLabel({ label }: { label: string }) {
 
 // ─── Policy Sections ───────────────────────────────────────────────────────────
 
+function HeroSection() {
+  return (
+    <section id="terms-h1" className="bg-surface pt-[96px] md:pt-[128px] pb-[40px] md:pb-[48px] border-b border-[#D8D5CE]">
+      <div className={CONTAINER}>
+        <RevealOnScroll>
+          <h1 className="font-serif font-normal text-gray-900 leading-[1.08] tracking-tight text-[40px] md:text-[60px]">
+            Terms & Conditions
+          </h1>
+        </RevealOnScroll>
+      </div>
+    </section>
+  );
+}
+
 function LastUpdated() {
   return (
-    <section className="bg-white py-[40px] md:py-[48px] border-b border-[#D8D5CE]">
+    <section id="terms-last-updated" className="bg-white py-[40px] md:py-[48px] border-b border-[#D8D5CE]">
       <div className={CONTAINER}>
         <RevealOnScroll>
           <p className="text-[15px] font-sans text-gray-500">
@@ -93,7 +107,7 @@ function LastUpdated() {
 
 function IntroSection() {
   return (
-    <section className="bg-surface py-[64px] md:py-[80px] border-b border-[#D8D5CE]">
+    <section id="terms-intro" className="bg-surface py-[64px] md:py-[80px] border-b border-[#D8D5CE]">
       <div className={CONTAINER}>
         <RevealOnScroll>
           <p className="text-[17px] leading-[1.75] text-gray-900 mb-6">
@@ -110,7 +124,7 @@ function IntroSection() {
 
 function WebsiteUseSection() {
   return (
-    <section className="bg-white py-[64px] md:py-[80px] border-b border-[#D8D5CE]">
+    <section id="terms-website" className="bg-white py-[64px] md:py-[80px] border-b border-[#D8D5CE]">
       <div className={CONTAINER}>
         <RevealOnScroll>
           <SectionLabel label="Website Use" />
@@ -131,7 +145,7 @@ function WebsiteUseSection() {
 
 function ServicesSection() {
   return (
-    <section className="bg-surface py-[64px] md:py-[80px] border-b border-[#D8D5CE]">
+    <section id="terms-services" className="bg-surface py-[64px] md:py-[80px] border-b border-[#D8D5CE]">
       <div className={CONTAINER}>
         <RevealOnScroll>
           <SectionLabel label="Services" />
@@ -152,7 +166,7 @@ function ServicesSection() {
 
 function SmsMessagingSection() {
   return (
-    <section className="bg-white py-[64px] md:py-[80px] border-b border-[#D8D5CE]">
+    <section id="terms-sms" className="bg-white py-[64px] md:py-[80px] border-b border-[#D8D5CE]">
       <div className={CONTAINER}>
         <RevealOnScroll>
           <SectionLabel label="SMS Messaging Terms" />
@@ -197,7 +211,7 @@ function SmsMessagingSection() {
 
 function SmsPrivacySection() {
   return (
-    <section className="bg-surface py-[64px] md:py-[80px] border-b border-[#D8D5CE]">
+    <section id="terms-sms-privacy" className="bg-surface py-[64px] md:py-[80px] border-b border-[#D8D5CE]">
       <div className={CONTAINER}>
         <RevealOnScroll>
           <SectionLabel label="SMS Privacy" />
@@ -218,7 +232,7 @@ function SmsPrivacySection() {
 
 function HelpSection() {
   return (
-    <section className="bg-white py-[48px] md:py-[64px] border-b border-[#D8D5CE]">
+    <section id="terms-help" className="bg-white py-[48px] md:py-[64px] border-b border-[#D8D5CE]">
       <div className={CONTAINER}>
         <RevealOnScroll>
           <p className="text-[17px] leading-[1.75] text-gray-700">
@@ -235,7 +249,7 @@ function HelpSection() {
 
 function IntellectualPropertySection() {
   return (
-    <section className="bg-surface py-[64px] md:py-[80px] border-b border-[#D8D5CE]">
+    <section id="terms-ip" className="bg-surface py-[64px] md:py-[80px] border-b border-[#D8D5CE]">
       <div className={CONTAINER}>
         <RevealOnScroll>
           <SectionLabel label="Intellectual Property" />
@@ -253,7 +267,7 @@ function IntellectualPropertySection() {
 
 function DisclaimerSection() {
   return (
-    <section className="bg-white py-[64px] md:py-[80px] border-b border-[#D8D5CE]">
+    <section id="terms-disclaimer" className="bg-white py-[64px] md:py-[80px] border-b border-[#D8D5CE]">
       <div className={CONTAINER}>
         <RevealOnScroll>
           <SectionLabel label="Disclaimer" />
@@ -274,7 +288,7 @@ function DisclaimerSection() {
 
 function LimitationSection() {
   return (
-    <section className="bg-surface py-[64px] md:py-[80px] border-b border-[#D8D5CE]">
+    <section id="terms-liability" className="bg-surface py-[64px] md:py-[80px] border-b border-[#D8D5CE]">
       <div className={CONTAINER}>
         <RevealOnScroll>
           <SectionLabel label="Limitation of Liability" />
@@ -292,7 +306,7 @@ function LimitationSection() {
 
 function ChangesTermsSection() {
   return (
-    <section className="bg-white py-[64px] md:py-[80px] border-b border-[#D8D5CE]">
+    <section id="terms-changes" className="bg-white py-[64px] md:py-[80px] border-b border-[#D8D5CE]">
       <div className={CONTAINER}>
         <RevealOnScroll>
           <SectionLabel label="Changes to These Terms" />
@@ -310,7 +324,7 @@ function ChangesTermsSection() {
 
 function ContactSection() {
   return (
-    <section className="bg-surface py-[64px] md:py-[80px] border-b border-[#D8D5CE]">
+    <section id="terms-contact" className="bg-surface py-[64px] md:py-[80px] border-b border-[#D8D5CE]">
       <div className={CONTAINER}>
         <RevealOnScroll>
           <SectionLabel label="Contact" />
@@ -344,15 +358,7 @@ export default function TermsConditions() {
       <SiteHeader />
       <main>
         <TableOfContents />
-        <section className="bg-surface pt-[96px] md:pt-[128px] pb-[40px] md:pb-[48px] border-b border-[#D8D5CE]">
-          <div className={CONTAINER}>
-            <RevealOnScroll>
-              <h1 className="font-serif font-normal text-gray-900 leading-[1.08] tracking-tight text-[40px] md:text-[60px]">
-                Terms & Conditions
-              </h1>
-            </RevealOnScroll>
-          </div>
-        </section>
+        <HeroSection />
         <LastUpdated />
         <IntroSection />
         <WebsiteUseSection />

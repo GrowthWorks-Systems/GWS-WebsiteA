@@ -77,9 +77,23 @@ function SectionLabel({ label }: { label: string }) {
 
 // ─── Policy Content Sections ───────────────────────────────────────────────────
 
+function HeroSection() {
+  return (
+    <section id="privacy-h1" className="bg-surface pt-[96px] md:pt-[128px] pb-[40px] md:pb-[48px] border-b border-[#D8D5CE]">
+      <div className={CONTAINER}>
+        <RevealOnScroll>
+          <h1 className="font-serif font-normal text-gray-900 leading-[1.08] tracking-tight text-[40px] md:text-[60px]">
+            Privacy Policy
+          </h1>
+        </RevealOnScroll>
+      </div>
+    </section>
+  );
+}
+
 function LastUpdated() {
   return (
-    <section className="bg-white py-[40px] md:py-[48px] border-b border-[#D8D5CE]">
+    <section id="privacy-last-updated" className="bg-white py-[40px] md:py-[48px] border-b border-[#D8D5CE]">
       <div className={CONTAINER}>
         <RevealOnScroll>
           <p className="text-[15px] font-sans text-gray-500">
@@ -93,7 +107,7 @@ function LastUpdated() {
 
 function IntroSection() {
   return (
-    <section className="bg-surface py-[64px] md:py-[80px] border-b border-[#D8D5CE]">
+    <section id="privacy-intro" className="bg-surface py-[64px] md:py-[80px] border-b border-[#D8D5CE]">
       <div className={CONTAINER}>
         <RevealOnScroll>
           <p className="text-[17px] leading-[1.75] text-gray-900 mb-6">
@@ -107,7 +121,7 @@ function IntroSection() {
 
 function InformationWeCollectSection() {
   return (
-    <section className="bg-white py-[64px] md:py-[80px] border-b border-[#D8D5CE]">
+    <section id="privacy-collect" className="bg-white py-[64px] md:py-[80px] border-b border-[#D8D5CE]">
       <div className={CONTAINER}>
         <RevealOnScroll>
           <SectionLabel label="Information We Collect" />
@@ -158,7 +172,7 @@ function HowWeUseSection() {
   ];
 
   return (
-    <section className="bg-surface py-[64px] md:py-[80px] border-b border-[#D8D5CE]">
+    <section id="privacy-use" className="bg-surface py-[64px] md:py-[80px] border-b border-[#D8D5CE]">
       <div className={CONTAINER}>
         <RevealOnScroll>
           <SectionLabel label="How We Use Information" />
@@ -184,7 +198,7 @@ function HowWeUseSection() {
 
 function SmsMobileSection() {
   return (
-    <section className="bg-white py-[64px] md:py-[80px] border-b border-[#D8D5CE]">
+    <section id="privacy-sms" className="bg-white py-[64px] md:py-[80px] border-b border-[#D8D5CE]">
       <div className={CONTAINER}>
         <RevealOnScroll>
           <SectionLabel label="SMS and Mobile Information" />
@@ -211,7 +225,7 @@ function SmsMobileSection() {
 
 function HowWeShareSection() {
   return (
-    <section className="bg-surface py-[64px] md:py-[80px] border-b border-[#D8D5CE]">
+    <section id="privacy-share" className="bg-surface py-[64px] md:py-[80px] border-b border-[#D8D5CE]">
       <div className={CONTAINER}>
         <RevealOnScroll>
           <SectionLabel label="How We Share Information" />
@@ -235,7 +249,7 @@ function HowWeShareSection() {
 
 function CookiesSection() {
   return (
-    <section className="bg-white py-[64px] md:py-[80px] border-b border-[#D8D5CE]">
+    <section id="privacy-cookies" className="bg-white py-[64px] md:py-[80px] border-b border-[#D8D5CE]">
       <div className={CONTAINER}>
         <RevealOnScroll>
           <SectionLabel label="Cookies and Analytics" />
@@ -253,7 +267,7 @@ function CookiesSection() {
 
 function DataSecuritySection() {
   return (
-    <section className="bg-surface py-[64px] md:py-[80px] border-b border-[#D8D5CE]">
+    <section id="privacy-security" className="bg-surface py-[64px] md:py-[80px] border-b border-[#D8D5CE]">
       <div className={CONTAINER}>
         <RevealOnScroll>
           <SectionLabel label="Data Security" />
@@ -271,7 +285,7 @@ function DataSecuritySection() {
 
 function YourChoicesSection() {
   return (
-    <section className="bg-white py-[64px] md:py-[80px] border-b border-[#D8D5CE]">
+    <section id="privacy-choices" className="bg-white py-[64px] md:py-[80px] border-b border-[#D8D5CE]">
       <div className={CONTAINER}>
         <RevealOnScroll>
           <SectionLabel label="Your Choices" />
@@ -292,7 +306,7 @@ function YourChoicesSection() {
 
 function ThirdPartySection() {
   return (
-    <section className="bg-surface py-[64px] md:py-[80px] border-b border-[#D8D5CE]">
+    <section id="privacy-thirdparty" className="bg-surface py-[64px] md:py-[80px] border-b border-[#D8D5CE]">
       <div className={CONTAINER}>
         <RevealOnScroll>
           <SectionLabel label="Third-Party Websites" />
@@ -310,7 +324,7 @@ function ThirdPartySection() {
 
 function ChangesSection() {
   return (
-    <section className="bg-white py-[64px] md:py-[80px] border-b border-[#D8D5CE]">
+    <section id="privacy-changes" className="bg-white py-[64px] md:py-[80px] border-b border-[#D8D5CE]">
       <div className={CONTAINER}>
         <RevealOnScroll>
           <SectionLabel label="Changes to This Privacy Policy" />
@@ -328,7 +342,7 @@ function ChangesSection() {
 
 function ContactSection() {
   return (
-    <section className="bg-surface py-[64px] md:py-[80px] border-b border-[#D8D5CE]">
+    <section id="privacy-contact" className="bg-surface py-[64px] md:py-[80px] border-b border-[#D8D5CE]">
       <div className={CONTAINER}>
         <RevealOnScroll>
           <SectionLabel label="Contact Us" />
@@ -362,15 +376,7 @@ export default function PrivacyPolicy() {
       <SiteHeader />
       <main>
         <TableOfContents />
-        <section className="bg-surface pt-[96px] md:pt-[128px] pb-[40px] md:pb-[48px] border-b border-[#D8D5CE]">
-          <div className={CONTAINER}>
-            <RevealOnScroll>
-              <h1 className="font-serif font-normal text-gray-900 leading-[1.08] tracking-tight text-[40px] md:text-[60px]">
-                Privacy Policy
-              </h1>
-            </RevealOnScroll>
-          </div>
-        </section>
+        <HeroSection />
         <LastUpdated />
         <IntroSection />
         <InformationWeCollectSection />

@@ -1,6 +1,7 @@
 'use client';
 
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useState } from 'react';
+import { useLocation } from 'wouter';
 
 type TocItem = {
   id: string;
@@ -215,6 +216,41 @@ const PAGE_TOCS: PageToc[] = [
       { id: 'industries-closing-cta', label: 'Next Step' },
     ],
   },
+  {
+    page: '/privacy',
+    items: [
+      { id: 'privacy-h1', label: 'Privacy Policy' },
+      { id: 'privacy-last-updated', label: 'Last Updated' },
+      { id: 'privacy-intro', label: 'Introduction' },
+      { id: 'privacy-collect', label: 'Information We Collect' },
+      { id: 'privacy-use', label: 'How We Use' },
+      { id: 'privacy-sms', label: 'SMS & Mobile' },
+      { id: 'privacy-share', label: 'How We Share' },
+      { id: 'privacy-cookies', label: 'Cookies' },
+      { id: 'privacy-security', label: 'Data Security' },
+      { id: 'privacy-choices', label: 'Your Choices' },
+      { id: 'privacy-thirdparty', label: 'Third-Party Sites' },
+      { id: 'privacy-changes', label: 'Changes' },
+      { id: 'privacy-contact', label: 'Contact Us' },
+    ],
+  },
+  {
+    page: '/terms',
+    items: [
+      { id: 'terms-h1', label: 'Terms & Conditions' },
+      { id: 'terms-last-updated', label: 'Last Updated' },
+      { id: 'terms-intro', label: 'Agreement' },
+      { id: 'terms-website', label: 'Website Use' },
+      { id: 'terms-services', label: 'Services' },
+      { id: 'terms-sms', label: 'SMS Messaging' },
+      { id: 'terms-sms-privacy', label: 'SMS Privacy' },
+      { id: 'terms-ip', label: 'Intellectual Property' },
+      { id: 'terms-disclaimer', label: 'Disclaimer' },
+      { id: 'terms-liability', label: 'Limitation of Liability' },
+      { id: 'terms-changes', label: 'Changes' },
+      { id: 'terms-contact', label: 'Contact' },
+    ],
+  },
 ];
 
 function getTocForPath(pathname: string): TocItem[] {
@@ -222,16 +258,16 @@ function getTocForPath(pathname: string): TocItem[] {
   return match?.items ?? [];
 }
 
-function TocRail({ items }: { items: TocItem[] }) {
+function TocRail({ items, pageKey }: { items: TocItem[]; pageKey: string }) {
   const [activeId, setActiveId] = useState<string>('');
-  const observerRef = useRef<IntersectionObserver | null>(null);
 
   useEffect(() => {
-    if (items.length === 0) return;
+    if (items.length === 0) {
+      setActiveId('');
+      return;
+    }
 
-    const ids = items.map((item) => item.id);
-
-    observerRef.current = new IntersectionObserver(
+    const observer = new IntersectionObserver(
       (entries) => {
         const visible = entries
           .filter((e) => e.isIntersecting)
@@ -247,13 +283,19 @@ function TocRail({ items }: { items: TocItem[] }) {
       }
     );
 
-    ids.forEach((id) => {
-      const el = document.getElementById(id);
-      if (el) observerRef.current?.observe(el);
-    });
+    // Small delay to let the new page render its DOM
+    const timer = setTimeout(() => {
+      items.forEach((item) => {
+        const el = document.getElementById(item.id);
+        if (el) observer.observe(el);
+      });
+    }, 50);
 
-    return () => observerRef.current?.disconnect();
-  }, [items]);
+    return () => {
+      clearTimeout(timer);
+      observer.disconnect();
+    };
+  }, [items, pageKey]);
 
   const handleJump = (id: string) => {
     const el = document.getElementById(id);
@@ -287,15 +329,8 @@ function TocRail({ items }: { items: TocItem[] }) {
 }
 
 export default function TableOfContents() {
-  const [pathname, setPathname] = useState('');
-
-  useEffect(() => {
-    if (typeof window !== 'undefined') {
-      setPathname(window.location.pathname);
-    }
-  }, []);
-
+  const [pathname] = useLocation();
   const items = getTocForPath(pathname);
 
-  return <TocRail items={items} />;
+  return <TocRail items={items} pageKey={pathname} />;
 }
