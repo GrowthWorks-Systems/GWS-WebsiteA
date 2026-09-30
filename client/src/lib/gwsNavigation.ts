@@ -38,9 +38,17 @@ export const GWS_NAV_GROUPS: readonly NavigationGroup[] = [
       { label: "Insurance Agencies", description: "Independent agencies & brokerages", href: "/insurance-agencies" },
     ],
   },
+  {
+    label: "Resources",
+    href: "/resources",
+    items: [
+      { label: "Resources", description: "Frameworks, tools, research, and guides", href: "/resources" },
+      { label: "Privacy Policy", description: "How we collect and protect your information", href: "/privacy" },
+      { label: "Terms & Conditions", description: "Website use and SMS messaging terms", href: "/terms" },
+    ],
+  },
 ] as const;
 
 export const GWS_NAV_LINKS = [
-  { label: "Resources", href: "/resources" },
   { label: "About", href: "/about" },
 ] as const;
