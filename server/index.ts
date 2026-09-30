@@ -1,5 +1,6 @@
 import express from "express";
 import { createServer } from "http";
+import fs from "node:fs";
 import path from "path";
 import { fileURLToPath } from "url";
 
@@ -18,7 +19,16 @@ async function startServer() {
 
   app.use(express.static(staticPath));
 
-  // Handle client-side routing - serve index.html for all routes
+  // Let real files (sitemap.xml, robots.txt, etc.) through before the SPA catch-all
+  app.get(["/sitemap.xml", "/robots.txt", "/favicon.ico"], (_req, res, next) => {
+    const filePath = path.join(staticPath, _req.url!);
+    if (fs.existsSync(filePath)) {
+      return res.sendFile(filePath);
+    }
+    next();
+  });
+
+  // Handle client-side routing - serve index.html for all other routes
   app.get("*", (_req, res) => {
     res.sendFile(path.join(staticPath, "index.html"));
   });
