@@ -20,6 +20,7 @@ import FinancialAdvisors from "@/pages/FinancialAdvisors";
 import InsuranceAgencies from "@/pages/InsuranceAgencies";
 import Resources from "@/pages/Resources";
 import About from "@/pages/About";
+import Teams from "@/pages/Teams";
 import Home from "@/pages/Home";
 import PrivacyPolicy from "@/pages/PrivacyPolicy";
 import TermsConditions from "@/pages/TermsConditions";
@@ -51,6 +52,7 @@ function Routes() {
       <Route path={"/insurance-agencies"} component={InsuranceAgencies} />
       <Route path={"/resources"} component={Resources} />
       <Route path={"/about"} component={About} />
+      <Route path={"/teams"} component={Teams} />
       <Route path={"/privacy"} component={PrivacyPolicy} />
       <Route path={"/terms"} component={TermsConditions} />
       <Route path={"/404"} component={NotFound} />
