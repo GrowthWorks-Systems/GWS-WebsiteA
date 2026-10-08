@@ -763,6 +763,15 @@ function ClosingCTASection() {
               Explore the Framework
             </a>
             <a
+              href="/teams"
+              className="transition-colors"
+              style={{ color: 'rgba(255,255,255,0.40)' }}
+              onMouseEnter={(e) => { e.currentTarget.style.color = 'rgba(255,255,255,0.70)'; }}
+              onMouseLeave={(e) => { e.currentTarget.style.color = 'rgba(255,255,255,0.40)'; }}
+            >
+              Meet the Team
+            </a>
+            <a
               href="mailto:info@growthworks-systems.com"
               className="transition-colors"
               style={{ color: 'rgba(255,255,255,0.40)' }}
