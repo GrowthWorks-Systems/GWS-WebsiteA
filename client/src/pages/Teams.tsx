@@ -107,73 +107,52 @@ function SectionLabel({ label }: { label: string }) {
   );
 }
 
-// ─── Team Member Card (Flippable) ──────────────────────────────────────────────
+// ─── Team Member Card ────────────────────────────────────────────────────────────
 
 function TeamMemberCard({
   name,
   role,
-  bio,
   image,
-  linkedin,
   delay = 0,
 }: {
   name: string;
   role: string;
-  bio: string;
   image: string;
-  linkedin: string;
   delay?: number;
 }) {
   const [imgError, setImgError] = useState(false);
 
   return (
     <RevealOnScroll delay={delay}>
-      <div className="group perspective">
-        <div className="flip-card-inner relative w-full h-[320px] md:h-[360px] border border-gray-200 rounded-none bg-white shadow-lg">
-          {/* Front face - Portrait only */}
-          <div className="flip-card-front absolute inset-0 overflow-hidden bg-[#F2E7E3]">
-            {!imgError ? (
-              <img
-                src={image}
-                alt={`${name} — ${role}, GrowthWorks Systems`}
-                className="w-full h-full object-contain object-center"
-                onError={() => setImgError(true)}
-              />
-            ) : (
-              <div className="w-full h-full flex items-center justify-center">
-                <span className="text-[28px] md:text-[32px] font-sans font-bold text-[#841617]">
-                  {name.split(" ").map((n) => n[0]).join("").slice(0, 2)}
-                </span>
-              </div>
-            )}
-            {/* Bottom gradient shadow */}
-            <div className="absolute bottom-0 left-0 right-0 h-16 bg-gradient-to-t from-black/25 via-black/10 to-transparent"></div>
-          </div>
+      <div className="bg-white shadow-xl shadow-amber-900/20 flex flex-col">
+        {/* Portrait container - image flushed to bottom */}
+        <div className="relative w-full h-[260px] md:h-[300px] flex items-end">
+          {!imgError ? (
+            <img
+              src={image}
+              alt={`${name} — ${role}, GrowthWorks Systems`}
+              className="w-full h-full object-contain object-bottom"
+              onError={() => setImgError(true)}
+            />
+          ) : (
+            <div className="w-full h-full flex items-center justify-center">
+              <span className="text-[28px] md:text-[32px] font-sans font-bold text-[#841617]">
+                {name.split(" ").map((n) => n[0]).join("").slice(0, 2)}
+              </span>
+            </div>
+          )}
+          {/* Subtle darker shadow at bottom of portrait */}
+          <div className="absolute bottom-0 left-0 right-0 h-16 bg-gradient-to-t from-black/20 via-black/8 to-transparent pointer-events-none"></div>
+        </div>
 
-          {/* Back face - Name, Role, Bio, LinkedIn */}
-          <div className="flip-card-back absolute inset-0 [transform:rotateY(180deg)] p-7 md:p-8 flex flex-col items-center text-center">
-            <h3 className="font-serif font-normal text-gray-900 leading-[1.2] text-[22px] md:text-[24px] mb-1">
-              {name}
-            </h3>
-            <p className="text-[15px] font-sans font-semibold text-[#841617] tracking-wide uppercase mb-4">
-              {role}
-            </p>
-            <p className="text-[15px] leading-[1.7] text-gray-500 mb-6 flex-1">
-              {bio}
-            </p>
-            <a
-              href={linkedin}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 text-[14px] font-sans font-semibold text-gray-400 hover:text-[#841617] transition-colors"
-              aria-label={`${name} on LinkedIn`}
-            >
-              <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor" aria-hidden="true">
-                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
-              </svg>
-              LinkedIn
-            </a>
-          </div>
+        {/* Name and Role below portrait */}
+        <div className="pt-4 pb-2">
+          <h3 className="font-serif font-normal text-gray-900 text-center text-[20px] md:text-[22px] mb-1">
+            {name}
+          </h3>
+          <p className="text-[14px] font-sans font-semibold text-[#841617] text-center tracking-wide uppercase">
+            {role}
+          </p>
         </div>
       </div>
     </RevealOnScroll>
@@ -211,9 +190,7 @@ export default function Teams() {
                   key={member.name}
                   name={member.name}
                   role={member.role}
-                  bio={member.bio}
                   image={member.image}
-                  linkedin={member.linkedin}
                   delay={idx * 80}
                 />
               ))}

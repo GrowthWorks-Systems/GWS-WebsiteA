@@ -30,10 +30,6 @@ module.exports = {
     'hover:border-[#841617]',
     'hover:text-[#841617]',
     'active:bg-[#611012]',
-    'perspective',
-    'backface-hidden',
-    'group-hover:[transform:rotateY(180deg)]',
-    'group-hover:[transform:rotateY(0deg)]',
   ],
   theme: {
     extend: {
@@ -135,7 +131,6 @@ module.exports = {
         fadeIn: 'fadeIn 0.5s ease-in-out',
         slideUp: 'slideUp 0.5s ease-out',
         slideDown: 'slideDown 0.5s ease-out',
-        flip: 'flip 0.6s ease-in-out',
       },
       keyframes: {
         fadeIn: {
@@ -149,11 +144,6 @@ module.exports = {
         slideDown: {
           '0%': { transform: 'translateY(-10px)', opacity: '0' },
           '100%': { transform: 'translateY(0)', opacity: '1' },
-        },
-        flip: {
-          '0%': { transform: 'rotateY(0deg)' },
-          '50%': { transform: 'rotateY(90deg)' },
-          '100%': { transform: 'rotateY(180deg)' }
         },
       },
     },
