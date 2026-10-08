@@ -2,7 +2,6 @@ import React, { useState, useRef } from "react";
 import SiteHeader from "@/components/SiteHeader";
 import SiteFooter from "@/components/SiteFooter";
 import { Seo } from "@/components/Seo";
-import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
 
 // ─── Constants ────────────────────────────────────────────────────────────────
 
@@ -131,27 +130,22 @@ function TeamMemberCard({
     <RevealOnScroll delay={delay}>
       <div className="bg-white border border-gray-200 rounded-none p-7 md:p-8 flex flex-col items-center text-center h-full">
         {/* Photo */}
-        <Avatar
-          className="w-28 h-28 md:w-32 md:h-32 rounded-full overflow-hidden border-2 border-gray-100 mb-5 shrink-0 bg-[#F2E7E3]"
-        >
+        <div className="w-28 h-28 md:w-32 md:h-32 rounded-full overflow-hidden border-2 border-gray-100 mb-5 shrink-0 bg-[#F2E7E3]">
           {!imgError ? (
-            <AvatarImage
+            <img
               src={image}
               alt={`${name} — ${role}, GrowthWorks Systems`}
-              className="object-cover object-top"
+              className="w-full h-full object-cover object-top"
               onError={() => setImgError(true)}
             />
           ) : (
-            <AvatarFallback
-              className="w-28 h-28 md:w-32 md:h-32 rounded-full border-2 border-gray-100 bg-[#F2E7E3]"
-              delayMs={300}
-            >
+            <div className="w-full h-full flex items-center justify-center">
               <span className="text-[28px] md:text-[32px] font-sans font-bold text-[#841617]">
                 {name.split(" ").map((n) => n[0]).join("").slice(0, 2)}
               </span>
-            </AvatarFallback>
+            </div>
           )}
-        </Avatar>
+        </div>
 
         {/* Name & Role */}
         <h3 className="font-serif font-normal text-gray-900 leading-[1.2] text-[22px] md:text-[24px] mb-1">
