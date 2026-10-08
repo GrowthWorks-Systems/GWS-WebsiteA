@@ -111,7 +111,7 @@ export const PAGE_SEO: Record<string, { title: string; description: string; cano
   },
   "/teams": {
     title: "Meet the Team — GrowthWorks Systems",
-    description: "The leadership team behind GrowthWorks Systems. Leigh Tidwell, Clayton Tidwell, John Baylon, and Jhed Serrano.",
+    description: "The leadership team behind GrowthWorks Systems. Leigh Tidwell (CRO), Clayton Tidwell (Founder), John Baylon (Operations Lead), and Jhed Serrano (Lead Developer).",
     canonical: "/teams",
   },
   "/privacy": {

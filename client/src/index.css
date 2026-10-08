@@ -2807,6 +2807,35 @@ h3 {
   animation: pulse-ring 1s ease-out;
 }
 
+/* Flip card perspective — used on Teams page */
+.perspective {
+  perspective: 1000px;
+}
+
+.backface-hidden {
+  backface-visibility: hidden;
+}
+
+/* Flippable card: default (front) state, hover (back) state */
+.flip-card-inner {
+  transition: transform 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+  transform-style: preserve-3d;
+}
+
+.flip-card-inner:hover {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+  backface-visibility: hidden;
+  position: absolute;
+  inset: 0;
+  border: 1px solid #d1d5db;
+  background: white;
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+}
+
 /* Full supplied package visual blocks — package architecture, site-owned type and accessible interaction states. */
 .full-visual-kicker {
   margin: 0 0 12px;
