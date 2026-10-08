@@ -16,7 +16,6 @@ const LEADERSHIP = [
     role: "Chief Revenue Officer",
     bio: "Leigh leads GrowthWorks Systems' revenue initiatives across marketing, sales, and business development. She also oversees GWS sales affiliates, including training, development, and sales standards, helping ensure every revenue initiative stays focused on creating measurable value and sustainable growth for our clients.",
     image: "/assets/images/team/leigh-tidwell.jpg",
-    initials: "LT",
     linkedin: "https://www.linkedin.com",
   },
   {
@@ -24,23 +23,20 @@ const LEADERSHIP = [
     role: "Founder",
     bio: "Three decades in operational problem solving across enterprise systems, Marine Corps leadership, and large-scale integration. Founded GrowthWorks Systems to design the complete revenue architecture that growing businesses actually need.",
     image: "/assets/images/branding/clayton-tidwell.jpg",
-    initials: "CT",
     linkedin: "https://www.linkedin.com/in/clayton-tidwell-11a2525",
   },
   {
     name: "John Baylon",
-    role: "Team Member",
-    bio: "Brings expertise to GrowthWorks Systems' delivery and client engagement. Committed to building the operational discipline that turns strategy into measurable revenue outcomes.",
-    image: "/assets/images/team/john-baylon.jpg",
-    initials: "JB",
+    role: "Operations Lead",
+    bio: "Focused on streamlining day-to-day operations, improving workflows, and implementing scalable systems and automation. Supports cross-functional execution by turning plans into organized, repeatable processes. Helps ensure projects and operational priorities move forward efficiently and consistently.",
+    image: "/assets/images/team/john-baylon.png",
     linkedin: "https://www.linkedin.com",
   },
   {
     name: "Jhed Serrano",
     role: "Team Member",
     bio: "Part of the GrowthWorks Systems team focused on executing the firm's methodology across client engagements. Dedicated to building the systems and capabilities that create lasting revenue performance.",
-    image: "/assets/images/team/jhed-serrano.jpg",
-    initials: "JS",
+    image: "/assets/images/team/jhed-serrano.png",
     linkedin: "https://www.linkedin.com",
   },
 ];
@@ -119,7 +115,6 @@ function TeamMemberCard({
   role,
   bio,
   image,
-  initials,
   linkedin,
   delay = 0,
 }: {
@@ -127,7 +122,6 @@ function TeamMemberCard({
   role: string;
   bio: string;
   image: string;
-  initials: string;
   linkedin: string;
   delay?: number;
 }) {
@@ -146,11 +140,11 @@ function TeamMemberCard({
               onError={() => setImgError(true)}
             />
           ) : (
-            <div className="w-full h-full flex items-center justify-center">
+            <AvatarFallback>
               <span className="text-[28px] md:text-[32px] font-sans font-bold text-[#841617]">
-                {initials}
+                {name.split(" ").map((n) => n[0]).join("").slice(0, 2)}
               </span>
-            </div>
+            </AvatarFallback>
           )}
         </div>
 
@@ -218,7 +212,6 @@ export default function Teams() {
                   role={member.role}
                   bio={member.bio}
                   image={member.image}
-                  initials={member.initials}
                   linkedin={member.linkedin}
                   delay={idx * 80}
                 />
