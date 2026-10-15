@@ -2544,9 +2544,9 @@
     "semantic_hash": ""
   },
   "client/src/pages/MeetTheTeam.tsx": {
-    "mtime": 1791990326.8700557,
-    "seen": 1791990579.2441654,
-    "ast_hash": "99bd0bf00b1b1ad9a726567024fcfe59",
+    "mtime": 1791995174.2253857,
+    "seen": 1791995296.8653903,
+    "ast_hash": "b2d0cc8a1c8c619081c10cde1fce0a81",
     "semantic_hash": ""
   },
   "client/src/pages/PrivacyPolicy.tsx": {
@@ -2585,16 +2585,22 @@
     "ast_hash": "9cc1f8e5f5ca2f241560305147ebeb5d",
     "semantic_hash": ""
   },
-  "client/public/assets/images/team/john-baylon.png": {
-    "mtime": 1791498643.7896109,
-    "seen": 1791914685.5878146,
-    "ast_hash": "d664d59f4d93c72af095434faa665c7d",
-    "semantic_hash": ""
-  },
   "client/public/assets/images/team/leigh-tidwell.png": {
     "mtime": 1791498643.4200194,
     "seen": 1791914685.5878167,
     "ast_hash": "3e34d9bf01477871797d3fc2fd325df9",
+    "semantic_hash": ""
+  },
+  "client/src/components/ui/image-accordion.tsx": {
+    "mtime": 1791994504.392958,
+    "seen": 1791994601.890052,
+    "ast_hash": "b555f3eb91cc9695143284399e427c29",
+    "semantic_hash": ""
+  },
+  "client/public/assets/images/team/John Baylon.png": {
+    "mtime": 1791924682.078972,
+    "seen": 1791994601.8904645,
+    "ast_hash": "b874777391e7b522a438dfe57876501d",
     "semantic_hash": ""
   }
 }

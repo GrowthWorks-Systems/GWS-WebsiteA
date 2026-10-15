@@ -19,14 +19,6 @@ const LEADERSHIP = [
     page: "/teams/leigh-tidwell",
   },
   {
-    name: "Clayton Tidwell",
-    role: "Founder",
-    bio: "Three decades in operational problem solving across enterprise systems, Marine Corps leadership, and large-scale integration. Founded GrowthWorks Systems to design the complete revenue architecture that growing businesses actually need.",
-    image: "/assets/images/team/clayton-tidwell.png",
-    linkedin: "https://www.linkedin.com/in/clayton-tidwell-11a2525",
-    page: "/teams/clayton-tidwell",
-  },
-  {
     name: "John Baylon",
     role: "Operations Lead",
     bio: "Focused on streamlining day-to-day operations, improving workflows, and implementing scalable systems and automation. Supports cross-functional execution by turning plans into organized, repeatable processes. Helps ensure projects and operational priorities move forward efficiently and consistently.",
@@ -134,7 +126,7 @@ function TeamMemberCard({
     <RevealOnScroll delay={delay}>
       <div className="flip-box-wrapper perspective w-full">
         <div
-          className="flip-box relative mx-auto w-full max-w-[364px] h-[468px] cursor-pointer border border-gray-200"
+          className="flip-box relative mx-auto w-full max-w-[436px] h-[562px] cursor-pointer border border-gray-200"
           tabIndex={0}
           role="button"
           aria-label={`View ${name}, ${role}`}
@@ -142,7 +134,7 @@ function TeamMemberCard({
           <div className="flip-box-inner absolute inset-0">
           {/* ── Front face ── */}
           <div className="flip-box__front absolute inset-0">
-            <div className="relative h-[312px] w-full overflow-hidden">
+            <div className="relative h-[374px] w-full overflow-hidden">
               {!imgError ? (
                 <img
                   src={image}
@@ -208,7 +200,7 @@ export default function Teams() {
       <Seo
         canonical="/teams"
         title="Meet the Team — GrowthWorks Systems"
-        description="The leadership team behind GrowthWorks Systems. Leigh Tidwell, Clayton Tidwell, John Baylon, and Jhed Serrano."
+        description="The leadership team behind GrowthWorks Systems. Leigh Tidwell, John Baylon, and Jhed Serrano."
       />
       <SiteHeader />
       <main>
@@ -225,18 +217,34 @@ export default function Teams() {
               </p>
             </RevealOnScroll>
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-10 mt-[140px] mb-[80px] p-10">
-              {LEADERSHIP.map((member, idx) => (
+            <div className="mt-[140px] mb-[80px] p-10">
+              {/* Leigh — centered on her own row */}
+              <div className="mb-10">
                 <TeamMemberCard
-                  key={member.name}
-                  name={member.name}
-                  role={member.role}
-                  bio={member.bio}
-                  image={member.image}
-                  page={member.page}
-                  delay={idx * 80}
+                  key={LEADERSHIP[0].name}
+                  name={LEADERSHIP[0].name}
+                  role={LEADERSHIP[0].role}
+                  bio={LEADERSHIP[0].bio}
+                  image={LEADERSHIP[0].image}
+                  page={LEADERSHIP[0].page}
+                  delay={0}
                 />
-              ))}
+              </div>
+
+              {/* John beside Jhed */}
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-10 mt-[150px]">
+                {LEADERSHIP.slice(1).map((member, idx) => (
+                  <TeamMemberCard
+                    key={member.name}
+                    name={member.name}
+                    role={member.role}
+                    bio={member.bio}
+                    image={member.image}
+                    page={member.page}
+                    delay={(idx + 1) * 80}
+                  />
+                ))}
+              </div>
             </div>
           </div>
         </section>
