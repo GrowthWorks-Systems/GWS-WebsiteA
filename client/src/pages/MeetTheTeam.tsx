@@ -217,9 +217,9 @@ export default function Teams() {
               </p>
             </RevealOnScroll>
 
-            <div className="mt-[140px] mb-[80px] p-10 space-y-10">
+            <div className="mt-[140px] mb-[80px] p-10">
               {/* Leigh — centered on her own row */}
-              <div className="flex justify-center">
+              <div className="grid grid-cols-1 place-items-center mb-10">
                 <TeamMemberCard
                   key={LEADERSHIP[0].name}
                   name={LEADERSHIP[0].name}
