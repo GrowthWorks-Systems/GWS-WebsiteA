@@ -188,6 +188,12 @@ function FounderHero() {
                 >
                   Meet Clayton
                 </a>
+                <a
+                  href="/meet-the-team"
+                  className="inline-flex items-center justify-center min-h-[48px] px-6 rounded-none border border-[#841617] text-[#841617] bg-surface hover:bg-[#F2E7E3] active:bg-[#E9D8D3] transition-colors font-sans font-semibold text-[16px] leading-[1.2] focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-[#2B2B2B] focus-visible:outline-offset-[3px]"
+                >
+                  Meet The Team
+                </a>
               </div>
             </RevealOnScroll>
           </div>
@@ -745,13 +751,21 @@ function ClosingCTASection() {
           <p className="text-[18px] md:text-[20px] leading-[1.6] mb-10 max-w-[560px] mx-auto" style={{ color: 'rgba(255,255,255,0.70)' }}>
             The Revenue Diagnostic examines the connected path from discovery through conversion, sales progression, and measurement — to identify where opportunity is being lost and what deserves attention first.
           </p>
-          <a
-            href="/revenue-diagnostic"
-            className="inline-flex items-center justify-center min-h-[48px] px-8 rounded-none font-sans font-semibold text-[16px] leading-[1.2] mx-auto"
-            style={{ background: '#841617', color: '#FFFFFF' }}
-          >
-            Book a Revenue Diagnostic
-          </a>
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+            <a
+              href="/revenue-diagnostic"
+              className="inline-flex items-center justify-center min-h-[48px] px-8 rounded-none font-sans font-semibold text-[16px] leading-[1.2]"
+              style={{ background: '#841617', color: '#FFFFFF' }}
+            >
+              Book a Revenue Diagnostic
+            </a>
+            <a
+              href="/meet-the-team"
+              className="inline-flex items-center justify-center min-h-[48px] px-6 rounded-none border border-[#FFFFFF] text-[#FFFFFF] bg-transparent hover:bg-[#F2E7E3]/10 active:bg-[#F2E7E3]/20 transition-colors font-sans font-semibold text-[16px] leading-[1.2] focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-[#FFFFFF] focus-visible:outline-offset-[3px]"
+            >
+              Meet The Team
+            </a>
+          </div>
           <div className="mt-10 flex flex-wrap items-center justify-center gap-x-8 gap-y-3 text-[14px] font-sans" style={{ color: 'rgba(255,255,255,0.40)' }}>
             <a
               href="/framework"
@@ -761,15 +775,6 @@ function ClosingCTASection() {
               onMouseLeave={(e) => { e.currentTarget.style.color = 'rgba(255,255,255,0.40)'; }}
             >
               Explore the Framework
-            </a>
-            <a
-              href="/teams"
-              className="transition-colors"
-              style={{ color: 'rgba(255,255,255,0.40)' }}
-              onMouseEnter={(e) => { e.currentTarget.style.color = 'rgba(255,255,255,0.70)'; }}
-              onMouseLeave={(e) => { e.currentTarget.style.color = 'rgba(255,255,255,0.40)'; }}
-            >
-              Meet the Team
             </a>
             <a
               href="mailto:info@growthworks-systems.com"

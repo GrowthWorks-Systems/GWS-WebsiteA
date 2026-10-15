@@ -51,5 +51,4 @@ export const GWS_NAV_GROUPS: readonly NavigationGroup[] = [
 
 export const GWS_NAV_LINKS = [
   { label: "About", href: "/about" },
-  { label: "Teams", href: "/teams" },
 ] as const;
