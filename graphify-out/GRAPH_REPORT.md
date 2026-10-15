@@ -1,16 +1,16 @@
-# Graph Report - GWS Website 2.0  (2026-09-15)
+# Graph Report - GWS Website 2.0  (2026-10-15)
 
 ## Corpus Check
-- 371 files · ~2,520,072 words
+- 377 files · ~2,612,870 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 4758 nodes · 7918 edges · 418 communities (258 shown, 160 thin omitted)
+- 4813 nodes · 8010 edges · 415 communities (253 shown, 162 thin omitted)
 - Extraction: 92% EXTRACTED · 8% INFERRED · 0% AMBIGUOUS · INFERRED: 668 edges (avg confidence: 0.85)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `8b60b04a`
+- Built from commit: `424a44ac`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -59,30 +59,30 @@
 - devDependencies
 - TestShadcnInstaller
 - detect_domain
-- i
-- design_system.py
+- wl
+- persist_design_system
 - Tailwind CSS Utility Reference
-- revenue-infrastructure-package/App.tsx
+- TermsConditions.tsx
 - input-group.tsx
 - extract-colors.cjs
 - validate-asset.cjs
 - carousel.tsx
 - form.tsx
 - dependencies
-- test_design_system_mode.py
+- design_system.py
 - validate-tokens.cjs
 - design-tokens-starter.json
 - ShadcnInstaller
 - .check_shadcn_config
 - .generate_config_string
 - patch
-- parse_decision_rules
+- n
 - 🌐 GWS Website 2.0
 - Brand Guidelines v1.0
 - inject-brand-context.cjs
 - embed-tokens.cjs
 - test_tailwind_config_gen.py
-- test_core.py
+- GoogleBusinessProfileOptimizationReview.tsx
 - SuppliedVisualBlocks.tsx
 - chart.tsx
 - src/App.tsx
@@ -102,9 +102,9 @@
 - scripts
 - o1
 - HomepageSectionSpacing.test.ts
-- Sa
+- r
 - SuppliedFragmentedConnectedVisual.tsx
-- Seo.tsx
+- components/SiteFooter.tsx
 - sm
 - BuyerJourneyPlugAndPlayHost.test.ts
 - RevenueInfrastructurePlugAndPlayHost.test.ts
@@ -134,7 +134,7 @@
 - next.config.cjs
 - _app.tsx
 - @builder.io/vite-plugin-jsx-loc
-- n
+- m
 - .test_add_components_no_config
 - Form & Input Components
 - Tailwind CSS Responsive Design
@@ -164,7 +164,7 @@
 - component-library/README.md
 - cmdk
 - embla-carousel-react
-- NineDomainFramework.tsx
+- PrivacyPolicy.tsx
 - @figma/astraui
 - framer-motion
 - gsap
@@ -208,7 +208,7 @@
 - vaul
 - wouter
 - zod
-- components/SiteFooter.tsx
+- CRMAutomation.tsx
 - prettier
 - tailwindcss
 - @tailwindcss/typography
@@ -277,15 +277,15 @@
 - About.tsx
 - graphify reference: extra exports and benchmark
 - graphify reference: extra exports and benchmark
-- $t
+- x
 - UI/UX Pro Max - Design Intelligence
-- AIReadyWebsite.tsx
+- components/TableOfContents.tsx
 - HOME SERVICES INDUSTRY PAGE — AUDIT & MODERNIZATION REPORT
 - Slides Reference
 - HTML Slide Template
 - HTML Slide Template
 - Query Contract
-- s
+- i
 - 15. ACCESSIBILITY & MOTION ✅ VERIFIED
 - graphify reference: query, path, explain
 - Slides
@@ -294,7 +294,7 @@
 - graphify reference: query, path, explain
 - 2. LIVE-PAGE CONTENT RETENTION
 - Brand Guidelines Template
-- test_core_data_quality.py
+- s
 - temp_app.tsx
 - add
 - Common Rules for Professional UI
@@ -310,7 +310,7 @@
 - graphify reference: commit hook and native CLAUDE.md integration
 - graphify reference: incremental update and cluster-only
 - 14. RESPONSIVE DESIGN ✅ VERIFIED
-- wl
+- i1
 - pnpm
 - tsx
 - graphify reference: GitHub clone and cross-repo merge
@@ -338,28 +338,26 @@
 - 8. AI VISIBILITY BOUNDARY ✅ ENFORCED
 - vite
 - components/SiteHeader.tsx
-- CRMAutomation.tsx
+- Seo.tsx
 - Resources.tsx
-- .generate
+- context-menu.tsx
 - mn
 - compilerOptions
 - menubar.tsx
-- sS
+- revenue-infrastructure-package/App.tsx
 - buyer-journey/Diagram.tsx
 - revenue-infrastructure/Diagram.tsx
-- drawer.tsx
-- select.tsx
-- AIVisibilityReview.tsx
+- image-accordion.tsx
+- Kr
+- _S
 - preview/main.tsx
 - site-header/SiteHeader.tsx
 - button
 - navigation-menu.tsx
-- fx
-- _1
+- pages/RevenueDiagnostic.tsx
 - input
 - BuyerJourney.tsx
 - ErrorBoundary.tsx
-- Kr
 - AIBuyerJourneySection.tsx
 - AIEvolutionSection.tsx
 - presets.ts
@@ -380,8 +378,7 @@
 - AIServiceBusinessRelevanceSection.tsx
 - AITechnicalFoundationSection.tsx
 - AIVScorePlaceholderSection.tsx
-- X
-- _S
+- vercel.json
 - add-seo-pages.ts
 - 16
 - 1
@@ -412,7 +409,7 @@
 ## God Nodes (most connected - your core abstractions)
 1. `$` - 445 edges
 2. `D6()` - 377 edges
-3. `cn()` - 274 edges
+3. `cn()` - 277 edges
 4. `n()` - 92 edges
 5. `TailwindConfigGenerator` - 58 edges
 6. `l()` - 52 edges
@@ -436,15 +433,15 @@
 ## Import Cycles
 - None detected.
 
-## Communities (418 total, 160 thin omitted)
+## Communities (415 total, 162 thin omitted)
 
 ### Community 0 - "$"
 Cohesion: 0.02
-Nodes (134): $, _8, a8(), AC(), Ai, Aj(), ak, Ay (+126 more)
+Nodes (136): $, _8, A6(), a8(), ab(), AC(), Ai, Aj() (+128 more)
 
 ### Community 1 - "validate_data.py"
-Cohesion: 0.12
-Nodes (34): _catalog_date(), _check_app_interface_contract(), _check_catalog_contract(), _check_catalog_summary(), _check_color_contract(), _check_core_data_contract(), _check_file(), _check_font_catalog() (+26 more)
+Cohesion: 0.08
+Nodes (46): read_rows(), TestAccessibilityGuidance, TestChartsTypographyAndIcons, TestCurrentReactGuidance, TestSemanticColors, _catalog_date(), _check_app_interface_contract(), _check_catalog_contract() (+38 more)
 
 ### Community 2 - "gray"
 Cohesion: 0.05
@@ -507,12 +504,12 @@ Cohesion: 0.11
 Nodes (19): $type, $value, background, foreground, muted-foreground, primary, primary-hover, secondary (+11 more)
 
 ### Community 17 - "BM25"
-Cohesion: 0.12
-Nodes (8): BM25, BM25 ranking algorithm for text search, Lowercase, normalize synonyms, split, remove punctuation, filter stopwords, Build BM25 index from documents, Score all documents against query, All indexed terms, for suggestion/typo-recovery purposes., TestBm25CoreBehavior, TestTokenizer
+Cohesion: 0.07
+Nodes (16): BM25, BM25 ranking algorithm for text search, Lowercase, normalize synonyms, split, remove punctuation, filter stopwords, Build BM25 index from documents, Score all documents against query, All indexed terms, for suggestion/typo-recovery purposes., format_markdown(), generate_design_system() (+8 more)
 
 ### Community 18 - "search"
-Cohesion: 0.10
-Nodes (8): Resolve a deprecated in-domain alias, or expose a cross-domain redirect., Main search function with auto-domain detection, search(), _style_search_destination(), TestDiagnosticsContracts, TestSearchDomains, read_rows(), TestStyleTaxonomy
+Cohesion: 0.11
+Nodes (7): Resolve a deprecated in-domain alias, or expose a cross-domain redirect., Main search function with auto-domain detection, search(), _style_search_destination(), TestSearchDomains, read_rows(), TestStyleTaxonomy
 
 ### Community 19 - "dropdown-menu.tsx"
 Cohesion: 0.12
@@ -524,15 +521,15 @@ Nodes (16): ManusDialogProps, Command(), CommandDialog(), CommandGroup(), Comman
 
 ### Community 21 - "D6"
 Cohesion: 0.04
-Nodes (78): D6(), _0(), $5(), a6(), am(), ap(), b6(), bp() (+70 more)
+Nodes (76): D6(), $5(), A4(), am(), Ao(), av(), b0(), Bm() (+68 more)
 
 ### Community 22 - "TailwindConfigGenerator"
 Cohesion: 0.10
 Nodes (12): main(), Add custom font families. Args: fonts: Dict of font_type: [font_names] e.g.,…, Add custom spacing values. Args: spacing: Dict of name: value e.g., {'18':…, Add custom breakpoints. Args: breakpoints: Dict of name: width e.g., {'3xl':…, Add plugin requirements. Args: plugins: List of plugin names e.g.,…, Get plugin recommendations based on configuration. Returns: List of recommended…, Generate Tailwind CSS configuration files., Validate configuration. Returns: Tuple of (valid, message) (+4 more)
 
 ### Community 23 - "read_rows"
-Cohesion: 0.10
-Nodes (8): read_rows(), split_values(), style_identities(), TestGeneratedCatalogContract, TestLandingAndStackContract, TestReasoningContract, TestStyleIdentityContract, _check_reasoning_contract()
+Cohesion: 0.07
+Nodes (15): Find matching reasoning rule for a category., Apply reasoning rules to search results., apply_decision_rules(), _object_without_duplicates(), parse_decision_rules(), Return deterministic mutations and an audit trail; never execute data., Parse the canonical condition -> action-array representation., _validate_action() (+7 more)
 
 ### Community 24 - "Home.tsx"
 Cohesion: 0.17
@@ -588,7 +585,7 @@ Nodes (16): $type, $value, $type, $value, $type, $value, $type, $value (+8 more)
 
 ### Community 38 - "cn"
 Cohesion: 0.05
-Nodes (54): AccordionContent(), AccordionItem(), AccordionTrigger(), Avatar(), AvatarFallback(), AvatarImage(), BreadcrumbEllipsis(), BreadcrumbItem() (+46 more)
+Nodes (55): Avatar(), AvatarFallback(), AvatarImage(), BreadcrumbEllipsis(), BreadcrumbItem(), BreadcrumbLink(), BreadcrumbList(), BreadcrumbPage() (+47 more)
 
 ### Community 40 - "components.json"
 Cohesion: 0.12
@@ -606,21 +603,17 @@ Nodes (9): Test adding components in dry run mode., Test ShadcnInstaller class.,
 Cohesion: 0.23
 Nodes (3): detect_domain(), Auto-detect the most relevant domain from query. Matches are weighted by…, TestDomainDetection
 
-### Community 44 - "i"
-Cohesion: 0.06
-Nodes (73): Bo(), bS(), By(), c3(), Ka(), C6(), B(), D() (+65 more)
+### Community 44 - "wl"
+Cohesion: 0.11
+Nodes (23): Aw(), Be(), Cp(), Dr(), Jm(), jw(), kl(), Km() (+15 more)
 
-### Community 45 - "design_system.py"
-Cohesion: 0.08
-Nodes (30): ansi_ljust(), _detect_page_type(), format_ascii_box(), format_master_md(), format_page_override_md(), _generate_intelligent_overrides(), hex_to_ansi(), persist_design_system() (+22 more)
+### Community 45 - "persist_design_system"
+Cohesion: 0.14
+Nodes (15): _detect_page_type(), format_master_md(), format_page_override_md(), _generate_intelligent_overrides(), persist_design_system(), Path, Format design system as MASTER.md with hierarchical override logic., Format a page-specific override file with intelligent AI-generated content. (+7 more)
 
 ### Community 46 - "Tailwind CSS Utility Reference"
 Cohesion: 0.05
 Nodes (43): Arbitrary Values, Aspect Ratio, Background Colors, Border Color, Border Radius, Border Style, Border Width, Borders (+35 more)
-
-### Community 47 - "revenue-infrastructure-package/App.tsx"
-Cohesion: 0.14
-Nodes (8): App(), CENTER_CAPABILITIES, LEFT_CONSEQUENCES, LEFT_TOOLS, PROCESS_STEPS, RIGHT_OUTCOMES, hostStyles, RevenueInfrastructurePlugAndPlayHost()
 
 ### Community 48 - "input-group.tsx"
 Cohesion: 0.12
@@ -646,9 +639,9 @@ Nodes (11): FormControl(), FormDescription(), FormFieldContext, FormFieldContext
 Cohesion: 0.15
 Nodes (13): axios, class-variance-authority, clsx, input-otp, dependencies, axios, class-variance-authority, clsx (+5 more)
 
-### Community 54 - "test_design_system_mode.py"
-Cohesion: 0.16
-Nodes (12): _contrast_ratio(), _derive_dark_palette(), _palette_is_dark(), WCAG relative luminance of a #RRGGBB string, or None if unparseable., True when a colors.csv row's Background is a dark surface., WCAG contrast ratio for two hex colors, or None if either is invalid., Keep product brand tokens while deriving accessible dark surfaces., Pick the highest-ranked palette matching the resolved mode. Only the dark case… (+4 more)
+### Community 54 - "design_system.py"
+Cohesion: 0.07
+Nodes (30): ansi_ljust(), _contrast_ratio(), _derive_dark_palette(), _filter_anti_patterns_for_mode(), format_ascii_box(), hex_to_ansi(), _palette_is_dark(), _query_wants_dark() (+22 more)
 
 ### Community 55 - "validate-tokens.cjs"
 Cohesion: 0.24
@@ -674,9 +667,9 @@ Nodes (6): Generate configuration file content. Returns: Configuration file as s
 Cohesion: 0.18
 Nodes (6): Test adding components with overwrite flag., Test successful component addition., Test component addition with subprocess error., Test component addition when npx is not found., Test successful addition of all components., patch
 
-### Community 61 - "parse_decision_rules"
-Cohesion: 0.21
-Nodes (8): Find matching reasoning rule for a category., Apply reasoning rules to search results., apply_decision_rules(), _object_without_duplicates(), parse_decision_rules(), Return deterministic mutations and an audit trail; never execute data., Parse the canonical condition -> action-array representation., _validate_action()
+### Community 61 - "n"
+Cohesion: 0.07
+Nodes (48): ah(), bi(), Bu(), cx(), eh(), Eo(), f5(), fm() (+40 more)
 
 ### Community 62 - "🌐 GWS Website 2.0"
 Cohesion: 0.05
@@ -698,9 +691,9 @@ Nodes (8): args, fs, minimal, MINIMAL_TOKENS, path, projectRoot, tokensPath, wra
 Cohesion: 0.22
 Nodes (8): Tests for tailwind_config_gen.py, Reduce a generated TS/JS config to a bare assignable object so it can be handed…, Regression guard for the missing-comma bug between the ``theme`` block and…, The property preceding ``plugins`` must end with a comma (pure-Python check, so…, The emitted config parses as valid JS via ``node --check``., _strip_to_object(), TestGeneratedConfigIsValidJs, parametrize
 
-### Community 67 - "test_core.py"
-Cohesion: 0.20
-Nodes (7): format_markdown(), generate_design_system(), Format design system as markdown., Main entry point for design system generation. Args: query: Search query (e.g.,…, format_output(), Format results for Claude consumption (token-optimized), TestPersistence
+### Community 67 - "GoogleBusinessProfileOptimizationReview.tsx"
+Cohesion: 0.18
+Nodes (3): GoogleBusinessProfileOptimizationReview(), WHAT_EXPECT, Window
 
 ### Community 68 - "SuppliedVisualBlocks.tsx"
 Cohesion: 0.24
@@ -711,8 +704,8 @@ Cohesion: 0.25
 Nodes (9): ChartConfig, ChartContainer(), ChartContext, ChartContextProps, ChartLegendContent(), ChartTooltipContent(), getPayloadConfigFromPayload(), THEMES (+1 more)
 
 ### Community 70 - "src/App.tsx"
-Cohesion: 0.09
-Nodes (12): App(), NOTE: About Theme, Toaster(), Theme, ThemeContext, ThemeContextType, ThemeProvider(), ThemeProviderProps (+4 more)
+Cohesion: 0.08
+Nodes (14): App(), NOTE: About Theme, Toaster(), Theme, ThemeContext, ThemeContextType, ThemeProvider(), ThemeProviderProps (+6 more)
 
 ### Community 71 - "glowy-waves-hero-shadcnui.tsx"
 Cohesion: 0.31
@@ -759,8 +752,8 @@ Cohesion: 0.28
 Nodes (8): Path, Regression tests for validate-tokens.cjs. The validator used to skip any line…, A hardcoded hex on the same line as a var() token is still a violation., A line that references only tokens produces no false positives., _run(), test_flags_hardcoded_hex_sharing_line_with_token(), test_token_only_line_reports_no_violation(), CompletedProcess
 
 ### Community 82 - "o"
-Cohesion: 0.09
-Nodes (69): a1(), Ad(), An(), av(), b4(), Bl(), Cd(), Ct() (+61 more)
+Cohesion: 0.10
+Nodes (50): Ad(), An(), b4(), c0(), Ct(), Cv(), d0(), d1() (+42 more)
 
 ### Community 83 - "empty.tsx"
 Cohesion: 0.29
@@ -771,24 +764,24 @@ Cohesion: 0.25
 Nodes (8): scripts, build, check, dev, format, preview, start, test
 
 ### Community 85 - "o1"
-Cohesion: 0.07
-Nodes (63): a0(), Bm(), br(), Ce(), Cv(), Da(), Dd(), e1() (+55 more)
+Cohesion: 0.12
+Nodes (34): a0(), a1(), Cd(), Da(), Dd(), f4(), gx(), ho() (+26 more)
 
 ### Community 86 - "HomepageSectionSpacing.test.ts"
 Cohesion: 0.29
 Nodes (6): buyerJourneyHost, buyerJourneyPackage, homeSource, pageStyles, revenueHost, revenuePackageStyles
 
-### Community 87 - "Sa"
-Cohesion: 0.08
-Nodes (58): _A(), Aa(), aN(), AR(), bN(), c7(), cA(), cN() (+50 more)
+### Community 87 - "r"
+Cohesion: 0.09
+Nodes (55): _A(), a7(), Aa(), aN(), AR(), bN(), c7(), cA() (+47 more)
 
 ### Community 88 - "SuppliedFragmentedConnectedVisual.tsx"
 Cohesion: 0.33
 Nodes (3): connected, fragmented, systemLayers
 
-### Community 89 - "Seo.tsx"
-Cohesion: 0.09
-Nodes (8): PAGE_SEO, Seo(), SeoProps, AIVisibilityCallPage(), WHAT_EXPECT, GoogleBusinessProfileOptimizationReview(), WHAT_EXPECT, Window
+### Community 89 - "components/SiteFooter.tsx"
+Cohesion: 0.08
+Nodes (10): ChatWidget(), IMPORTANT: React does not execute inline scripts inserted via…, WIDGET_CONFIG, footerGroups, SiteFooter(), ImageAccordion(), COMPARISON, Industries (+2 more)
 
 ### Community 90 - "sm"
 Cohesion: 0.60
@@ -838,9 +831,9 @@ Nodes (3): primary-foreground, $type, $value
 Cohesion: 0.67
 Nodes (3): secondary-foreground, $type, $value
 
-### Community 121 - "n"
-Cohesion: 0.08
-Nodes (45): A4(), as(), bi(), Cr(), g(), G1(), gd(), gt() (+37 more)
+### Community 121 - "m"
+Cohesion: 0.06
+Nodes (60): _1(), $4(), a6(), ap(), as(), b6(), bp(), Cn() (+52 more)
 
 ### Community 123 - "Form & Input Components"
 Cohesion: 0.06
@@ -851,8 +844,8 @@ Cohesion: 0.06
 Nodes (32): 1. Mobile-First Design, 2. Consistent Breakpoint Usage, 3. Test at Breakpoint Boundaries, 4. Use Container for Content Width, 5. Progressive Enhancement, 6. Avoid Too Many Breakpoints, Best Practices, Breakpoint System (+24 more)
 
 ### Community 125 - "Framework.tsx"
-Cohesion: 0.06
-Nodes (22): CanonicalDefinition(), ICON_PROPS, NODE_CXS, NOT_ITEMS, PILLARS, RevenueMaturity(), STAGES, BusinessOutcomesSection() (+14 more)
+Cohesion: 0.05
+Nodes (30): CanonicalDefinition(), ICON_PROPS, NODE_CXS, NOT_ITEMS, PILLARS, cols, domains, edges (+22 more)
 
 ### Community 127 - "Typography Specifications"
 Cohesion: 0.06
@@ -862,17 +855,9 @@ Nodes (30): Accessibility, Base System, Best Practices, Clean & Modern, Common F
 Cohesion: 0.05
 Nodes (37): Behavior and responsive layout, Buyer Journey Visual, Configuration, Files, Reuse notes, Usage, Google Drive mirror, Categories (+29 more)
 
-### Community 153 - "NineDomainFramework.tsx"
-Cohesion: 0.22
-Nodes (9): cols, domains, edges, NineDomainFramework(), nodePos(), PopoverPos, rows, SystemDiagram() (+1 more)
-
 ### Community 178 - "fk"
 Cohesion: 0.12
 Nodes (44): Au(), bk, ck(), dk(), dl(), Ei(), el(), Fi() (+36 more)
-
-### Community 197 - "components/SiteFooter.tsx"
-Cohesion: 0.09
-Nodes (5): footerGroups, SiteFooter(), ConversionSystems(), COMPARISON, Industries
 
 ### Community 208 - "replace-section.js"
 Cohesion: 0.29
@@ -880,7 +865,7 @@ Nodes (6): afterStart, content, fs, funcStart, nextFuncMatch, R
 
 ### Community 225 - "l"
 Cohesion: 0.06
-Nodes (43): A6(), a7(), b7(), l(), Dy(), r(), Ey(), f7() (+35 more)
+Nodes (39): aS, b7(), cS(), l(), Du(), eS(), Ey(), f7() (+31 more)
 
 ### Community 226 - "Logo Usage Rules"
 Cohesion: 0.07
@@ -895,8 +880,8 @@ Cohesion: 0.07
 Nodes (28): Accordion, Alert, ARIA Labels, Checkbox and Radio, Color Contrast, Command Palette Navigation, Component-Specific Patterns, Dialog/Modal Navigation (+20 more)
 
 ### Community 229 - "Ia"
-Cohesion: 0.15
-Nodes (31): ah(), bv(), c6(), d6(), eh(), f5(), Gs(), hv() (+23 more)
+Cohesion: 0.19
+Nodes (27): bv(), c6(), d6(), hv(), i6(), Ia(), l6(), Le() (+19 more)
 
 ### Community 230 - "What You Must Do When Invoked"
 Cohesion: 0.07
@@ -911,12 +896,12 @@ Cohesion: 0.08
 Nodes (25): Common Pitfalls, Core Prompt Structure, Detailed Brief, Eco/Sustainable, Effective Keywords by Style, Fashion Brand, Healthcare, Industry-Specific Prompts (+17 more)
 
 ### Community 233 - "j4"
-Cohesion: 0.14
-Nodes (29): Ae(), at(), Ax(), b1(), c1(), dp(), dx(), Eo() (+21 more)
+Cohesion: 0.20
+Nodes (21): Ae(), at(), Ax(), b1(), br(), c1(), dp(), dx() (+13 more)
 
 ### Community 234 - "DesignSystemGenerator"
-Cohesion: 0.15
-Nodes (7): DesignSystemGenerator, Generates design system recommendations from aggregated searches., Load reasoning rules from CSV., Select best matching result based on priority keywords., TestReasoningMatch, The exact reproduction from issue #428., TestEndToEndCoherence
+Cohesion: 0.11
+Nodes (12): DesignSystemGenerator, Generates design system recommendations from aggregated searches., Load reasoning rules from CSV., Execute searches across multiple domains., Select best matching result based on priority keywords., Extract results list from search result dict., Generate complete design system recommendation. variance/motion/density are…, Bucket a 1-10 dial value into its tier config. Returns None if value is None. (+4 more)
 
 ### Community 235 - "Color Palette Management"
 Cohesion: 0.08
@@ -1098,15 +1083,15 @@ Nodes (8): graphify reference: extra exports and benchmark, Step 6b - Wiki (only
 Cohesion: 0.22
 Nodes (8): graphify reference: extra exports and benchmark, Step 6b - Wiki (only if --wiki flag), Step 7 - Neo4j export (only if --neo4j or --neo4j-push flag), Step 7a - FalkorDB export (only if --falkordb or --falkordb-push flag), Step 7b - SVG export (only if --svg flag), Step 7c - GraphML export (only if --graphml flag), Step 7d - MCP server (only if --mcp flag), Step 8 - Token reduction benchmark (only if total_words > 5000)
 
-### Community 280 - "$t"
-Cohesion: 0.11
-Nodes (26): Ao(), b0(), es(), a(), f0(), Ga(), h0(), ha() (+18 more)
+### Community 280 - "x"
+Cohesion: 0.18
+Nodes (28): _0(), Bl(), d(), Fd(), jr(), lx(), Nd(), ox() (+20 more)
 
 ### Community 281 - "UI/UX Pro Max - Design Intelligence"
 Cohesion: 0.25
 Nodes (7): How to Use, Primary Use Cases, Recommended, Rule Categories by Priority, Skip, UI/UX Pro Max - Design Intelligence, When to Apply
 
-### Community 282 - "AIReadyWebsite.tsx"
+### Community 282 - "components/TableOfContents.tsx"
 Cohesion: 0.09
 Nodes (10): getTocForPath(), PAGE_TOCS, PageToc, TableOfContents(), TocItem, AIReadyWebsite(), APPROACH, CALL_STEPS (+2 more)
 
@@ -1130,9 +1115,9 @@ Nodes (6): Animation Classes, Background Images, Base Structure, Chart.js Integr
 Cohesion: 0.29
 Nodes (7): Query Contract, Step 1: Analyze User Requirements, Step 2: Generate Design System (new projects/pages), Step 2b: Persist Design System (Master + Overrides Pattern), Step 2c: Design Dials (optional), Step 3: Supplement with Detailed Searches (as needed), Step 4: Stack Guidelines
 
-### Community 288 - "s"
-Cohesion: 0.09
-Nodes (24): _6(), _7(), bA(), gA(), gN, hA(), hS, k3() (+16 more)
+### Community 288 - "i"
+Cohesion: 0.06
+Nodes (73): Bo(), bS(), By(), c3(), Ka(), C6(), B(), D() (+65 more)
 
 ### Community 289 - "15. ACCESSIBILITY & MOTION ✅ VERIFIED"
 Cohesion: 0.29
@@ -1166,9 +1151,9 @@ Nodes (7): 2. LIVE-PAGE CONTENT RETENTION, After-Hours Opportunity Loss ✅ PRES
 Cohesion: 0.40
 Nodes (4): Brand Guidelines Template, Document Structure, Extractable Fields, Usage
 
-### Community 297 - "test_core_data_quality.py"
-Cohesion: 0.16
-Nodes (11): read_rows(), TestAccessibilityGuidance, TestChartsTypographyAndIcons, TestCurrentReactGuidance, TestSemanticColors, _check_chart_contract(), _check_typography_contract(), _configured_font_names() (+3 more)
+### Community 297 - "s"
+Cohesion: 0.07
+Nodes (38): _6(), _7(), bA(), cN(), d7(), dn, gA(), gN (+30 more)
 
 ### Community 300 - "Common Rules for Professional UI"
 Cohesion: 0.40
@@ -1222,9 +1207,9 @@ Nodes (3): For --cluster-only, For --update (incremental re-extraction), graphif
 Cohesion: 0.50
 Nodes (4): 14. RESPONSIVE DESIGN ✅ VERIFIED, Desktop (1200px+), Mobile (< 760px), Tablet (760px–1200px)
 
-### Community 314 - "wl"
-Cohesion: 0.11
-Nodes (23): Aw(), Be(), Cp(), Dr(), Jm(), jw(), kl(), Km() (+15 more)
+### Community 314 - "i1"
+Cohesion: 0.17
+Nodes (20): Ce(), e1(), Fl(), fo(), ge(), i1(), Jx(), Ks() (+12 more)
 
 ### Community 322 - "17. BUILD & VALIDATION RESULTS"
 Cohesion: 0.50
@@ -1234,17 +1219,21 @@ Nodes (4): 17. BUILD & VALIDATION RESULTS, Build Status ✅ SUCCESS, Graphify In
 Cohesion: 0.26
 Nodes (7): SiteHeader(), GWS_NAV_GROUPS, GWS_NAV_LINKS, NavigationGroup, NavigationMenuItem, shouldCompactStickyHeader(), STICKY_HEADER_COMPACT_THRESHOLD
 
+### Community 344 - "Seo.tsx"
+Cohesion: 0.09
+Nodes (5): PAGE_SEO, Seo(), SeoProps, WHAT_EXPECT, ConversionSystems()
+
 ### Community 346 - "Resources.tsx"
 Cohesion: 0.12
 Nodes (5): CATEGORIES, Category, ResourceItem, Resources(), Status
 
-### Community 347 - ".generate"
-Cohesion: 0.16
-Nodes (8): _filter_anti_patterns_for_mode(), Drop "avoid dark mode" advice once dark mode is the resolved answer., Execute searches across multiple domains., Extract results list from search result dict., Generate complete design system recommendation. variance/motion/density are…, Bucket a 1-10 dial value into its tier config. Returns None if value is None., _resolve_dial(), TestAntiPatternGating
+### Community 347 - "context-menu.tsx"
+Cohesion: 0.12
+Nodes (9): ContextMenuCheckboxItem(), ContextMenuContent(), ContextMenuItem(), ContextMenuLabel(), ContextMenuRadioItem(), ContextMenuSeparator(), ContextMenuShortcut(), ContextMenuSubContent() (+1 more)
 
 ### Community 349 - "mn"
-Cohesion: 0.15
-Nodes (22): Af(), al(), bl(), cf(), Cg(), df(), eb(), f3() (+14 more)
+Cohesion: 0.11
+Nodes (28): Af(), al(), b3(), bl(), cf(), Cg(), df(), eb() (+20 more)
 
 ### Community 350 - "compilerOptions"
 Cohesion: 0.10
@@ -1254,9 +1243,9 @@ Nodes (20): compilerOptions, esModuleInterop, jsx, lib, module, moduleResolution
 Cohesion: 0.12
 Nodes (11): Menubar(), MenubarCheckboxItem(), MenubarContent(), MenubarItem(), MenubarLabel(), MenubarRadioItem(), MenubarSeparator(), MenubarShortcut() (+3 more)
 
-### Community 352 - "sS"
-Cohesion: 0.17
-Nodes (15): ab(), aS, cS(), Du(), eS(), Fg(), i8(), n8() (+7 more)
+### Community 352 - "revenue-infrastructure-package/App.tsx"
+Cohesion: 0.14
+Nodes (8): App(), CENTER_CAPABILITIES, LEFT_CONSEQUENCES, LEFT_TOOLS, PROCESS_STEPS, RIGHT_OUTCOMES, hostStyles, RevenueInfrastructurePlugAndPlayHost()
 
 ### Community 354 - "buyer-journey/Diagram.tsx"
 Cohesion: 0.14
@@ -1266,17 +1255,13 @@ Nodes (6): BuyerJourneyProps, C, CARD_X, NODE_CARD, NODE_X, PARTICLES
 Cohesion: 0.17
 Nodes (6): CENTER_CAPABILITIES, LEFT_CONSEQUENCES, LEFT_TOOLS, PROCESS_STEPS, RevenueInfrastructureProps, RIGHT_OUTCOMES
 
-### Community 356 - "drawer.tsx"
-Cohesion: 0.18
-Nodes (6): DrawerContent(), DrawerDescription(), DrawerFooter(), DrawerHeader(), DrawerOverlay(), DrawerTitle()
+### Community 356 - "image-accordion.tsx"
+Cohesion: 0.33
+Nodes (7): Accordion(), AccordionContent(), AccordionItem(), AccordionTrigger(), ImageAccordionDemo(), ImageAccordionItem, ImageAccordionProps
 
-### Community 357 - "select.tsx"
-Cohesion: 0.18
-Nodes (7): SelectContent(), SelectItem(), SelectLabel(), SelectScrollDownButton(), SelectScrollUpButton(), SelectSeparator(), SelectTrigger()
-
-### Community 358 - "AIVisibilityReview.tsx"
-Cohesion: 0.18
-Nodes (3): AIVisibilityReview(), WHAT_EXPECT, Window
+### Community 357 - "Kr"
+Cohesion: 0.29
+Nodes (7): Kr(), lS, pS(), qS(), wf(), WS(), zS()
 
 ### Community 359 - "preview/main.tsx"
 Cohesion: 0.22
@@ -1294,13 +1279,9 @@ Nodes (10): fg, font-size, hover-bg, button, $type, $value, $type, $value (+2 mo
 Cohesion: 0.22
 Nodes (9): NavigationMenu(), NavigationMenuContent(), NavigationMenuIndicator(), NavigationMenuItem(), NavigationMenuLink(), NavigationMenuList(), NavigationMenuTrigger(), navigationMenuTriggerStyle (+1 more)
 
-### Community 363 - "fx"
-Cohesion: 0.20
-Nodes (10): fx(), g6(), Hl(), ke(), Ne(), nv(), qd(), Sn() (+2 more)
-
-### Community 364 - "_1"
-Cohesion: 0.31
-Nodes (9): _1(), $4(), Cn(), g0(), h1(), Kd(), Kl(), mx() (+1 more)
+### Community 363 - "pages/RevenueDiagnostic.tsx"
+Cohesion: 0.18
+Nodes (3): RevenueDiagnostic(), WHAT_EXPECT, Window
 
 ### Community 365 - "input"
 Cohesion: 0.29
@@ -1313,10 +1294,6 @@ Nodes (6): BuyerJourney(), App(), DriftBeam, DriftNode, GwsParticleDrift(), PART
 ### Community 367 - "ErrorBoundary.tsx"
 Cohesion: 0.29
 Nodes (3): ErrorBoundary, Props, State
-
-### Community 368 - "Kr"
-Cohesion: 0.29
-Nodes (7): Kr(), lS, pS(), qS(), wf(), WS(), zS()
 
 ### Community 371 - "presets.ts"
 Cohesion: 0.40
@@ -1338,9 +1315,9 @@ Nodes (5): lg, $type, $value, lg, lg
 Cohesion: 0.67
 Nodes (4): padding-y, padding-y, $type, $value
 
-### Community 389 - "X"
-Cohesion: 0.67
-Nodes (4): Je(), Jt(), ra(), X()
+### Community 389 - "vercel.json"
+Cohesion: 0.50
+Nodes (3): buildCommand, outputDirectory, rewrites
 
 ### Community 392 - "16"
 Cohesion: 0.67
@@ -1371,19 +1348,19 @@ Cohesion: 0.67
 Nodes (3): ring, $type, $value
 
 ## Knowledge Gaps
-- **1581 isolated node(s):** `fs`, `path`, `fs`, `path`, `fs` (+1576 more)
+- **1588 isolated node(s):** `fs`, `path`, `fs`, `path`, `fs` (+1583 more)
   These have ≤1 connection - possible missing edges or undocumented components.
-- **160 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
+- **162 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-- **Why does `$` connect `$` to `s`, `l`, `sS`, `_S`, `i`, `Kr`, `fk`, `f9`, `D6`, `Sa`, `wl`, `mn`?**
-  _High betweenness centrality (0.025) - this node is a cross-community bridge._
-- **Why does `D6()` connect `D6` to `$`, `s`, `l`, `Ia`, `X`, `j4`, `fx`, `_1`, `i`, `o`, `o1`, `$t`, `n`?**
-  _High betweenness centrality (0.023) - this node is a cross-community bridge._
-- **Why does `cn()` connect `cn` to `drawer.tsx`, `chart.tsx`, `select.tsx`, `sidebar.tsx`, `utils.ts`, `navigation-menu.tsx`, `alert-dialog.tsx`, `card.tsx`, `ErrorBoundary.tsx`, `input-group.tsx`, `carousel.tsx`, `dialog.tsx`, `dropdown-menu.tsx`, `empty.tsx`, `form.tsx`, `item.tsx`, `alert.tsx`, `menubar.tsx`?**
-  _High betweenness centrality (0.017) - this node is a cross-community bridge._
+- **Why does `$` connect `$` to `i`, `l`, `Kr`, `_S`, `s`, `wl`, `fk`, `f9`, `D6`, `r`, `mn`?**
+  _High betweenness centrality (0.027) - this node is a cross-community bridge._
+- **Why does `D6()` connect `D6` to `$`, `i`, `l`, `Ia`, `s`, `j4`, `o`, `o1`, `r`, `x`, `m`, `i1`, `n`?**
+  _High betweenness centrality (0.019) - this node is a cross-community bridge._
+- **Why does `cn()` connect `cn` to `sidebar.tsx`, `utils.ts`, `alert-dialog.tsx`, `dropdown-menu.tsx`, `dialog.tsx`, `item.tsx`, `input-group.tsx`, `carousel.tsx`, `form.tsx`, `chart.tsx`, `card.tsx`, `empty.tsx`, `components/SiteFooter.tsx`, `context-menu.tsx`, `alert.tsx`, `menubar.tsx`, `image-accordion.tsx`, `navigation-menu.tsx`, `ErrorBoundary.tsx`?**
+  _High betweenness centrality (0.018) - this node is a cross-community bridge._
 - **Are the 11 inferred relationships involving `$` (e.g. with `e3()` and `el()`) actually correct?**
   _`$` has 11 INFERRED edges - model-reasoned connections that need verification._
 - **Are the 26 inferred relationships involving `D6()` (e.g. with `_0()` and `a6()`) actually correct?**
