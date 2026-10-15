@@ -19,14 +19,6 @@ const LEADERSHIP = [
     page: "/teams/leigh-tidwell",
   },
   {
-    name: "Clayton Tidwell",
-    role: "Founder",
-    bio: "Three decades in operational problem solving across enterprise systems, Marine Corps leadership, and large-scale integration. Founded GrowthWorks Systems to design the complete revenue architecture that growing businesses actually need.",
-    image: "/assets/images/team/clayton-tidwell.png",
-    linkedin: "https://www.linkedin.com/in/clayton-tidwell-11a2525",
-    page: "/teams/clayton-tidwell",
-  },
-  {
     name: "John Baylon",
     role: "Operations Lead",
     bio: "Focused on streamlining day-to-day operations, improving workflows, and implementing scalable systems and automation. Supports cross-functional execution by turning plans into organized, repeatable processes. Helps ensure projects and operational priorities move forward efficiently and consistently.",
@@ -208,7 +200,7 @@ export default function Teams() {
       <Seo
         canonical="/teams"
         title="Meet the Team — GrowthWorks Systems"
-        description="The leadership team behind GrowthWorks Systems. Leigh Tidwell, Clayton Tidwell, John Baylon, and Jhed Serrano."
+        description="The leadership team behind GrowthWorks Systems. Leigh Tidwell, John Baylon, and Jhed Serrano."
       />
       <SiteHeader />
       <main>
