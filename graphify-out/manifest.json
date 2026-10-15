@@ -2544,9 +2544,9 @@
     "semantic_hash": ""
   },
   "client/src/pages/MeetTheTeam.tsx": {
-    "mtime": 1791995174.2253857,
-    "seen": 1791995296.8653903,
-    "ast_hash": "b2d0cc8a1c8c619081c10cde1fce0a81",
+    "mtime": 1792077768.6291542,
+    "seen": 1792077854.0406864,
+    "ast_hash": "afb1c660fb4c01477c8b57fe0003c149",
     "semantic_hash": ""
   },
   "client/src/pages/PrivacyPolicy.tsx": {
@@ -2591,16 +2591,58 @@
     "ast_hash": "3e34d9bf01477871797d3fc2fd325df9",
     "semantic_hash": ""
   },
-  "client/src/components/ui/image-accordion.tsx": {
-    "mtime": 1791994504.392958,
-    "seen": 1791994601.890052,
-    "ast_hash": "b555f3eb91cc9695143284399e427c29",
-    "semantic_hash": ""
-  },
   "client/public/assets/images/team/John Baylon.png": {
     "mtime": 1791924682.078972,
     "seen": 1791994601.8904645,
     "ast_hash": "b874777391e7b522a438dfe57876501d",
+    "semantic_hash": ""
+  },
+  "client/client/src/pages/teams/clayton-tidwell.tsx": {
+    "mtime": 1792003780.3216617,
+    "seen": 1792077854.0405056,
+    "ast_hash": "53392d218e89603a7347eef43430378e",
+    "semantic_hash": ""
+  },
+  "client/client/src/pages/teams/jhed-serrano.tsx": {
+    "mtime": 1792003988.2033217,
+    "seen": 1792077854.0405073,
+    "ast_hash": "20b4d6f4b6adb0743bdf154cb4784c6f",
+    "semantic_hash": ""
+  },
+  "client/client/src/pages/teams/john-baylon.tsx": {
+    "mtime": 1792003854.1275227,
+    "seen": 1792077854.0405087,
+    "ast_hash": "b861b9f8f1929d22dbbbcbcb69c70b9b",
+    "semantic_hash": ""
+  },
+  "client/client/src/pages/teams/leigh-tidwell.tsx": {
+    "mtime": 1792003730.5713685,
+    "seen": 1792077854.0405097,
+    "ast_hash": "42809fba373328f71feaf4a9ac21654f",
+    "semantic_hash": ""
+  },
+  "client/src/pages/teams/clayton-tidwell.tsx": {
+    "mtime": 1792002476.4259775,
+    "seen": 1792077854.040694,
+    "ast_hash": "f0bf101a1b7473a56414facd485d3ca2",
+    "semantic_hash": ""
+  },
+  "client/src/pages/teams/jhed-serrano.tsx": {
+    "mtime": 1792002537.7487223,
+    "seen": 1792077854.040695,
+    "ast_hash": "df3308b99fbf67c031921d2812a8d513",
+    "semantic_hash": ""
+  },
+  "client/src/pages/teams/john-baylon.tsx": {
+    "mtime": 1792002505.305871,
+    "seen": 1792077854.040696,
+    "ast_hash": "11b0fd8916480a7265aa82ba76c4bd34",
+    "semantic_hash": ""
+  },
+  "client/src/pages/teams/leigh-tidwell.tsx": {
+    "mtime": 1792003651.2671804,
+    "seen": 1792077854.0406969,
+    "ast_hash": "305789c97d565515a6d32c17a7858f7e",
     "semantic_hash": ""
   }
 }
