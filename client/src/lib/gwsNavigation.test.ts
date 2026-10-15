@@ -11,7 +11,7 @@ describe("GWS navigation reference structure", () => {
     ]);
   });
 
-  it("keeps Resources and About as standalone links", () => {
-    expect(GWS_NAV_LINKS.map(({ label }) => label)).toEqual(["Resources", "About"]);
+  it("keeps About as a standalone link", () => {
+    expect(GWS_NAV_LINKS.map(({ label }) => label)).toEqual(["About"]);
   });
 });

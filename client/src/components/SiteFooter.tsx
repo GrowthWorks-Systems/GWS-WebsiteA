@@ -2,6 +2,7 @@ import React from "react";
 import { Linkedin, Mail, Phone } from "lucide-react";
 import { GWS_NAV_GROUPS, GWS_NAV_LINKS } from "@/lib/gwsNavigation";
 import { Link } from "wouter";
+import ChatWidget from "@/components/ChatWidget";
 
 const OFFICIAL_LOGO_WHITE = "/assets/images/branding/growthworks-official-logo-white.png";
 
@@ -61,6 +62,7 @@ export default function SiteFooter() {
           </address>
         </div>
         {footerGroups.map((group) => <nav className="footer-link-group" aria-label={group.title} key={group.title}><h2>{group.title}</h2>{group.links.map((link) => <FooterLink key={link}>{link}</FooterLink>)}</nav>)}
+        <ChatWidget />
       </div>
       <div className="footer-bottom"><div className="site-shell"><small>© 2026 GrowthWorks Systems LLC. All rights reserved.</small><em>One System. Every Touchpoint. Predictable Revenue.</em></div></div>
     </footer>

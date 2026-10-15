@@ -105,6 +105,14 @@ const PAGE_TOCS: PageToc[] = [
     ],
   },
   {
+    page: '/meet-the-team',
+    items: [
+      { id: 'leadership-h1', label: 'Leadership' },
+      { id: 'board-of-advisors-h2', label: 'Board of Advisors' },
+      { id: 'closing-cta-h2', label: 'Next Step' },
+    ],
+  },
+  {
     page: '/crm-automation',
     items: [
       { id: 'crm-hero-title', label: 'Overview' },

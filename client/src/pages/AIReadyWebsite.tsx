@@ -63,17 +63,17 @@ function RevealOnScroll({
 }
 
 const SectionLabel = ({ label }: { label: string }) => (
-  <p
-    className="text-[14px] font-sans font-semibold tracking-[0.18em] uppercase text-[#841617] industries-section-label"
+  <h3
+    className="text-[14px] font-sans font-semibold tracking-[0.18em] uppercase !text-gray-400 industries-section-label"
   >
     {label}
-  </p>
+  </h3>
 );
 
 function SectionNumber({ num }: { num: string }) {
   return (
     <span
-      className="font-serif font-normal text-[#841617] text-[36px] md:text-[48px] leading-[1] tracking-tight"
+      className="font-serif font-normal text-crimson text-[36px] md:text-[48px] leading-[1] tracking-tight"
       aria-hidden="true"
     >
       {num}
@@ -82,7 +82,7 @@ function SectionNumber({ num }: { num: string }) {
 }
 
 const CrimsonRule = () => (
-  <span aria-hidden="true" className="block mb-6 w-12 h-[2px] bg-[#841617]" />
+  <span aria-hidden="true" className="block mb-6 w-12 h-[2px] bg-crimson" />
 );
 
 /* ─── Primary CTA (48px) ────────────────────────────────────────────── */
@@ -98,8 +98,7 @@ const PrimaryLink = ({
   <a
     href={href}
     onClick={onClick}
-    className="inline-flex items-center justify-center gap-2 rounded bg-[#841617] text-white font-sans font-semibold text-[16px] h-12 px-8 hover:bg-[#721315] transition-colors focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-[3px] focus-visible:outline-[#2B2B2B]"
-    style={{ fontFamily: '"DM Sans", Arial, sans-serif', color: '#ffffff' }}
+    className="inline-flex items-center justify-center gap-2 rounded bg-crimson hover:bg-crimson-dark transition-colors text-white font-sans font-semibold text-[16px] h-12 px-8 focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-[3px] focus-visible:outline-gray-800"
   >
     {children}
   </a>
@@ -114,7 +113,7 @@ const SecondaryLink = ({
 }) => (
   <a
     href={href}
-    className="inline-flex items-center justify-center gap-2 rounded border border-gray-200 text-gray-900 font-sans font-semibold text-[16px] h-12 px-8 bg-transparent hover:border-[#841617] hover:text-[#841617] transition-colors focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-[3px] focus-visible:outline-[#2B2B2B]"
+    className="inline-flex items-center justify-center gap-2 rounded border border-gray-200 text-gray-900 font-sans font-semibold text-[16px] h-12 px-8 bg-transparent hover:border-crimson hover:text-crimson transition-colors focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-[3px] focus-visible:outline-gray-800"
   >
     {children}
   </a>
@@ -208,7 +207,7 @@ function Hero() {
               AI-Ready Website
             </div>
             <h2 id="ai-ready-title" className="gws-glowy-title">
-              A website is not a brochure. It is a <span style={{ color: 'var(--maroon)' }}>revenue asset.</span>
+              A website is not a brochure. It is a <span className="text-crimson">revenue asset.</span>
             </h2>
             <p className="gws-glowy-copy">
               An AI-Ready Website is the conversion engine at the center of your Revenue Infrastructure. It establishes authority, earns trust, and moves qualified prospects toward a decision — for both human visitors and AI-assisted buying and discovery environments.
@@ -216,8 +215,7 @@ function Hero() {
             <div className="gws-glowy-actions">
               <a
                 href="/google-business-profile-optimization-review"
-                className="gws-glowy-primary supporting-button"
-                style={{ fontFamily: '"DM Sans", Arial, sans-serif', fontSize: 14 }}
+                className="gws-glowy-primary supporting-button !text-[14px]"
               >
                 Improve My Google Visibility
               </a>
@@ -265,12 +263,12 @@ function BusinessProblemSection() {
                 {PROBLEMS.map((p, i) => (
                   <RevealOnScroll key={i} delayMs={i * 80}>
                     <li
-                      className="group relative rounded-none border border-gray-200 bg-white p-5 md:p-6 transition-all duration-300 hover:border-gray-400 hover:shadow-lg hover:-translate-y-1 cursor-default"
+                      className="group relative rounded-2xl border border-gray-200 bg-white p-5 md:p-6 transition-all duration-300 hover:border-gray-400 hover:shadow-lg hover:-translate-y-1 cursor-default"
                     >
                       <div className="flex items-start gap-3">
                         <span
                           aria-hidden="true"
-                          className="mt-[2px] inline-flex shrink-0 items-center justify-center w-7 h-7 rounded-full bg-[#841617]/10 text-[#841617] text-[12px] font-bold leading-none"
+                          className="mt-[2px] inline-flex shrink-0 items-center justify-center w-7 h-7 rounded-full bg-crimson/10 text-crimson text-[12px] font-bold leading-none"
                         >
                           {i + 1}
                         </span>
@@ -313,7 +311,7 @@ function ApproachSection() {
                 className="font-serif font-normal text-[2rem] md:text-[2.75rem] leading-[1.15] text-gray-900 mb-4"
               >
                 Engineered for conversions, AI indexing, and{" "}
-                <span style={{ color: '#841617' }}>executive credibility.</span>
+                <span className="text-crimson">executive credibility.</span>
               </h2>
               <p
                 className="text-[17px] md:text-[18px] leading-[1.65] mb-10"
@@ -325,11 +323,11 @@ function ApproachSection() {
                 {APPROACH.map((row, i) => (
                   <RevealOnScroll key={row.n} delayMs={i * 60}>
                     <div
-                      className="group relative rounded-none border border-gray-200 bg-white p-5 md:p-6 transition-all duration-300 hover:border-gray-400 hover:shadow-lg hover:-translate-y-1 cursor-default"
+                      className="group relative rounded-2xl border border-gray-200 bg-white p-5 md:p-6 transition-all duration-300 hover:border-gray-400 hover:shadow-lg hover:-translate-y-1 cursor-default"
                     >
                       <div className="flex items-center gap-3 mb-3">
                         <span
-                          className="inline-flex items-center justify-center w-8 h-8 rounded-lg bg-[#841617] text-white text-[13px] font-bold leading-none shrink-0 transition-transform duration-300 group-hover:scale-110"
+                          className="inline-flex items-center justify-center w-8 h-8 rounded-lg bg-crimson text-white text-[13px] font-bold leading-none shrink-0 transition-transform duration-300 group-hover:scale-110"
                         >
                           {row.n}
                         </span>
@@ -390,11 +388,11 @@ function OutcomesSection() {
                 {OUTCOMES.map((o, i) => (
                   <RevealOnScroll key={o.t} delayMs={i * 80}>
                     <li
-                      className="group relative rounded-none border border-gray-200 bg-white p-5 md:p-6 transition-all duration-300 hover:border-[#841617] hover:shadow-lg hover:-translate-y-1 cursor-default"
+                      className="group relative rounded-2xl border border-gray-200 bg-white p-5 md:p-6 transition-all duration-300 hover:border-crimson hover:shadow-lg hover:-translate-y-1 cursor-default"
                     >
                       <div className="flex items-center gap-3 mb-3">
                         <span
-                          className="inline-flex items-center justify-center w-8 h-8 rounded-lg bg-[#841617]/10 text-[#841617] text-[13px] font-bold leading-none shrink-0 transition-all duration-300 group-hover:bg-[#841617] group-hover:text-white group-hover:scale-110"
+                          className="inline-flex items-center justify-center w-8 h-8 rounded-lg bg-crimson/10 text-crimson text-[13px] font-bold leading-none shrink-0 transition-all duration-300 group-hover:bg-crimson group-hover:text-white group-hover:scale-110"
                         >
                           0{i + 1}
                         </span>
@@ -461,7 +459,7 @@ function AuditCTASection() {
                   <li key={i} className="flex items-start gap-3 group">
                     <span
                       aria-hidden="true"
-                      className="mt-[6px] inline-flex shrink-0 items-center justify-center w-5 h-5 rounded-full bg-[#841617]/10 text-[#841617] text-[10px] font-bold group-hover:bg-[#841617] group-hover:text-white transition-colors duration-200"
+                      className="mt-[6px] inline-flex shrink-0 items-center justify-center w-5 h-5 rounded-full bg-crimson/10 text-crimson text-[10px] font-bold group-hover:bg-crimson group-hover:text-white transition-colors duration-200"
                     >
                       ✓
                     </span>
@@ -478,11 +476,11 @@ function AuditCTASection() {
 
             {/* Right: dark informational panel */}
             <div
-              className="group relative rounded-none p-5 md:p-7 lg:p-9 text-white border border-gray-800 flex flex-col justify-center transition-all duration-300 hover:border-[#841617]/50 hover:shadow-2xl"
+              className="group relative rounded-2xl p-5 md:p-7 lg:p-9 text-white border border-gray-800 flex flex-col justify-center transition-all duration-300 hover:border-crimson/50 hover:shadow-2xl"
               style={{ background: "var(--dark)" }}
             >
               {/* Timeline line */}
-              <div className="absolute left-[19px] top-[52px] bottom-[52px] w-[2px] bg-gray-700 group-hover:bg-[#841617]/30 transition-colors duration-300" />
+              <div className="absolute left-[19px] top-[52px] bottom-[52px] w-[2px] bg-gray-700 group-hover:bg-crimson/30 transition-colors duration-300" />
 
               <p
                 className="text-[14px] font-semibold tracking-[0.18em] uppercase mb-6"
@@ -497,7 +495,7 @@ function AuditCTASection() {
                     className="relative grid grid-cols-[28px_1fr] gap-3 md:gap-4 items-start"
                   >
                     <span
-                      className="relative z-10 flex items-center justify-center w-[28px] h-[28px] rounded-full border-2 border-[#841617] text-[12px] font-bold text-[#841617] transition-all duration-300 group-hover:bg-[#841617] group-hover:text-white"
+                      className="relative z-10 flex items-center justify-center w-[28px] h-[28px] rounded-full border-2 border-crimson text-[12px] font-bold text-crimson transition-all duration-300 group-hover:bg-crimson group-hover:text-white"
                     >
                       0{i + 1}
                     </span>
@@ -534,7 +532,7 @@ function ClosingBand() {
   return (
     <section
       aria-labelledby="ai-ready-closing-h2"
-      className="section" style={{ background: "var(--dark)", color: "#ffffff" }}
+      className="section text-white" style={{ background: "var(--dark)" }}
     >
       <div className="max-w-[1200px] mx-auto px-5 md:px-8 lg:px-16">
         <RevealOnScroll>
@@ -542,7 +540,6 @@ function ClosingBand() {
             <h2
               id="ai-ready-closing-h2"
               className="font-serif font-normal text-[2rem] md:text-[2.75rem] leading-[1.15] text-white mb-6 mx-auto max-w-[720px]"
-    style={{ color: '#ffffff' }}
             >
               Your business doesn't have a marketing problem. It has a <span className="heading-accent">Revenue Infrastructure</span> problem.
             </h2>
@@ -568,10 +565,10 @@ function ClosingBand() {
 
             {/* Visual highlight card — left-aligned, not centered */}
             <div
-              className="mt-10 rounded-none border border-gray-700 p-6 md:p-8 transition-all duration-300 hover:border-[#841617]/40 text-left"
+              className="mt-10 rounded-2xl border border-gray-700 p-6 md:p-8 transition-all duration-300 hover:border-crimson/40 text-left"
               style={{ background: "rgba(255,255,255,0.03)" }}
             >
-              <p className="text-[13px] font-semibold tracking-[0.18em] uppercase text-[#841617] mb-4">
+              <p className="text-[13px] font-semibold tracking-[0.18em] uppercase text-crimson mb-4">
                 What You Will Get
               </p>
               <ul className="space-y-3">
@@ -581,7 +578,7 @@ function ClosingBand() {
                   "A specific recommendation you can act on immediately",
                 ].map((item, i) => (
                   <li key={i} className="flex items-start gap-3">
-                    <span className="mt-[3px] inline-flex items-center justify-center w-5 h-5 rounded-full bg-[#841617]/20 text-[#841617] text-[10px] font-bold shrink-0">
+                    <span className="mt-[3px] inline-flex items-center justify-center w-5 h-5 rounded-full bg-crimson/20 text-crimson text-[10px] font-bold shrink-0">
                       ✓
                     </span>
                     <span className="text-[15px] leading-[1.6] text-gray-300">{item}</span>
