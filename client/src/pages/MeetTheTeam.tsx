@@ -217,18 +217,34 @@ export default function Teams() {
               </p>
             </RevealOnScroll>
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-10 mt-[140px] mb-[80px] p-10">
-              {LEADERSHIP.map((member, idx) => (
+            <div className="mt-[140px] mb-[80px] p-10 space-y-10">
+              {/* Leigh — centered on her own row */}
+              <div className="flex justify-center">
                 <TeamMemberCard
-                  key={member.name}
-                  name={member.name}
-                  role={member.role}
-                  bio={member.bio}
-                  image={member.image}
-                  page={member.page}
-                  delay={idx * 80}
+                  key={LEADERSHIP[0].name}
+                  name={LEADERSHIP[0].name}
+                  role={LEADERSHIP[0].role}
+                  bio={LEADERSHIP[0].bio}
+                  image={LEADERSHIP[0].image}
+                  page={LEADERSHIP[0].page}
+                  delay={0}
                 />
-              ))}
+              </div>
+
+              {/* John beside Jhed */}
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-10">
+                {LEADERSHIP.slice(1).map((member, idx) => (
+                  <TeamMemberCard
+                    key={member.name}
+                    name={member.name}
+                    role={member.role}
+                    bio={member.bio}
+                    image={member.image}
+                    page={member.page}
+                    delay={(idx + 1) * 80}
+                  />
+                ))}
+              </div>
             </div>
           </div>
         </section>
