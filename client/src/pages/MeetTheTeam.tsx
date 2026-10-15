@@ -232,7 +232,7 @@ export default function Teams() {
               </div>
 
               {/* John beside Jhed */}
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-10 mt-50">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-10 mt-[150px]">
                 {LEADERSHIP.slice(1).map((member, idx) => (
                   <TeamMemberCard
                     key={member.name}
