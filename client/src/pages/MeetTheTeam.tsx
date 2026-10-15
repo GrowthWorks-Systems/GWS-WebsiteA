@@ -126,7 +126,7 @@ function TeamMemberCard({
     <RevealOnScroll delay={delay}>
       <div className="flip-box-wrapper perspective w-full">
         <div
-          className="flip-box relative mx-auto w-full max-w-[364px] h-[468px] cursor-pointer border border-gray-200"
+          className="flip-box relative mx-auto w-full max-w-[436px] h-[562px] cursor-pointer border border-gray-200"
           tabIndex={0}
           role="button"
           aria-label={`View ${name}, ${role}`}
@@ -134,7 +134,7 @@ function TeamMemberCard({
           <div className="flip-box-inner absolute inset-0">
           {/* ── Front face ── */}
           <div className="flip-box__front absolute inset-0">
-            <div className="relative h-[312px] w-full overflow-hidden">
+            <div className="relative h-[374px] w-full overflow-hidden">
               {!imgError ? (
                 <img
                   src={image}
