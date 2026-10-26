@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
 import SiteHeader from "@/components/SiteHeader";
 import SiteFooter from "@/components/SiteFooter";
 import TableOfContents from "@/components/TableOfContents";
@@ -142,6 +142,8 @@ function ContactInfo() {
 
 function ContactFormSection() {
   const [isSubmitting, setIsSubmitting] = useState(false);
+  // Keep one key for retries of the same submission; rotate after success.
+  const submissionKey = useRef<string | null>(null);
   const [submitState, setSubmitState] = useState<"idle" | "success" | "error">("idle");
   const [errorMessage, setErrorMessage] = useState<string>("");
 
@@ -178,11 +180,12 @@ function ContactFormSection() {
     };
 
     try {
+      submissionKey.current ??= crypto.randomUUID();
       const response = await fetch("/api/contact", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
-          "Idempotency-Key": crypto.randomUUID(),
+          "Idempotency-Key": submissionKey.current,
         },
         body: JSON.stringify(payload),
       });
@@ -198,6 +201,7 @@ function ContactFormSection() {
       }
 
       setSubmitState("success");
+      submissionKey.current = null;
       form.reset();
     } catch (err) {
       const msg = err instanceof Error ? err.message : "Something went wrong. Please try again.";
