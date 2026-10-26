@@ -206,6 +206,12 @@ contactRouter.post("/api/contact", async (req, res) => {
     consent: {
       sms: data.smsConsent,
       consentedAt: data.smsConsent ? submittedAt : null,
+      method: "website_checkbox",
+      source: "https://www.growthworks-systems.com/contact",
+      disclosureVersion: "votel-2026-10-19",
+      disclosureText: "By providing your phone number, you agree to receive SMS e.g., Marketing, Customer Care from GrowthWorks Systems. Message frequency may vary. Standard Message and Data Rates may apply. Reply STOP to opt out. Reply HELP for help.",
+      privacyUrl: "https://www.growthworks-systems.com/privacy",
+      termsUrl: "https://www.growthworks-systems.com/terms",
     },
     fields: {
       firstName: data.firstName,
