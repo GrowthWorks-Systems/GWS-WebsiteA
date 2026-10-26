@@ -228,8 +228,8 @@ contactRouter.post("/api/contact", async (req, res) => {
   const webhookUrl = process.env.MAVIS_CONTACT_WEBHOOK_URL;
   const webhookToken = process.env.MAVIS_CONTACT_WEBHOOK_TOKEN;
 
-  if (!webhookUrl || !webhookToken) {
-    console.error("[contact] webhook not configured — MAVIS_CONTACT_WEBHOOK_URL or MAVIS_CONTACT_WEBHOOK_TOKEN missing");
+  if (!webhookUrl) {
+    console.error("[contact] webhook not configured — MAVIS_CONTACT_WEBHOOK_URL missing");
     return res.status(503).json({
       success: false,
       error: "Contact service is temporarily unavailable. Please try again later or email info@growthworks-systems.com.",
@@ -242,7 +242,7 @@ contactRouter.post("/api/contact", async (req, res) => {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
-        Authorization: `Bearer ${webhookToken}`,
+        ...(webhookToken ? { Authorization: `Bearer ${webhookToken}` } : {}),
         "X-GWS-Submission-Id": submissionId,
         "X-GWS-Source": "contact-page",
       },
