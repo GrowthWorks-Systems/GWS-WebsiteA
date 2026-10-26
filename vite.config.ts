@@ -203,7 +203,25 @@ function vitePluginStorageProxy(): Plugin {
   };
 }
 
-const plugins = [react(), tailwindcss(), jsxLocPlugin(), vitePluginManusRuntime(), vitePluginManusDebugCollector(), vitePluginStorageProxy()];
+// Contact API middleware for Vite dev server
+// In production, the Express server handles /api/contact directly.
+// In development, we mount the same Express router via Vite middleware.
+function vitePluginContactApi(): Plugin {
+  return {
+    name: "vite-plugin-contact-api",
+    async configureServer(server: ViteDevServer) {
+      // Dynamic import to avoid loading server deps in build context
+      try {
+        const { default: contactRouter } = await import("./server/contact.js");
+        server.middlewares.use(contactRouter);
+      } catch (err) {
+        console.warn("[vite-plugin-contact-api] could not load contact router:", err);
+      }
+    },
+  };
+}
+
+const plugins = [react(), tailwindcss(), jsxLocPlugin(), vitePluginManusRuntime(), vitePluginManusDebugCollector(), vitePluginStorageProxy(), vitePluginContactApi()];
 
 export default defineConfig({
   plugins,

@@ -22,6 +22,7 @@ import Resources from "@/pages/Resources";
 import About from "@/pages/About";
 import MeetTheTeam from "@/pages/MeetTheTeam";
 import Home from "@/pages/Home";
+import Contact from "@/pages/Contact";
 import PrivacyPolicy from "@/pages/PrivacyPolicy";
 import TermsConditions from "@/pages/TermsConditions";
 import SiteHeader from "@/components/SiteHeader";
@@ -52,6 +53,7 @@ function Routes() {
       <Route path={"/insurance-agencies"} component={InsuranceAgencies} />
       <Route path={"/resources"} component={Resources} />
       <Route path={"/about"} component={About} />
+      <Route path={"/contact"} component={Contact} />
       <Route path={"/meet-the-team"} component={MeetTheTeam} />
       <Route path={"/privacy"} component={PrivacyPolicy} />
       <Route path={"/terms"} component={TermsConditions} />

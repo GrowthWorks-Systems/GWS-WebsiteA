@@ -30,6 +30,10 @@ module.exports = {
     'hover:border-[#841617]',
     'hover:text-[#841617]',
     'active:bg-[#611012]',
+    'text-primary-600',
+    'hover:text-primary-700',
+    'text-blue-600',
+    'hover:text-blue-700',
   ],
   theme: {
     extend: {

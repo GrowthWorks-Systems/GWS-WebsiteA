@@ -125,15 +125,14 @@ function ContactInfo() {
         </div>
       </div>
 
-      <div className="border-t border-stone-200 pt-6">
-        <a
-          href={CONTACT_INFO.bookingHref}
-          onClick={() => window.scrollTo(0, 0)}
-          className="inline-flex items-center gap-2 text-crimson hover:text-crimson-dark font-sans font-semibold text-[15px] leading-[1.2] transition-colors group"
+      <div className="pt-6">
+        <button
+          onClick={() => window.location.href = CONTACT_INFO.bookingHref}
+          className="inline-flex items-center gap-2 text-[#721315] hover:text-[#5a0e10] font-sans font-semibold text-[15px] leading-[1.2] transition-all duration-200 group bg-white border border-[#721315] px-4 py-2 rounded cursor-pointer hover:bg-[#fdf0f0] hover:border-[#5a0e10] hover:shadow-md"
         >
           <Calendar className="w-4 h-4 group-hover:translate-x-0.5 transition-transform" aria-hidden="true" />
           Prefer a scheduled conversation? Book a Revenue Diagnostic →
-        </a>
+        </button>
       </div>
     </aside>
   );
@@ -246,7 +245,7 @@ function ContactFormSection() {
   }
 
   return (
-    <section aria-label="Contact form" className="border-t-0">
+    <section aria-label="Contact form" style={{ borderTop: "none" }}>
       <div className="mb-6">
         <h2 className="font-serif font-normal text-gray-900 leading-[1.08] tracking-tight text-[24px] md:text-[28px]">
           Send us a message
@@ -543,7 +542,7 @@ export default function Contact() {
               </div>
 
               {/* Right column: form panel */}
-              <section aria-label="Contact form" className="bg-white border border-gray-200 rounded-none p-7 md:p-8">
+              <section aria-label="Contact form" className="bg-white border border-gray-300 shadow-md rounded-[9px] p-7 md:p-8">
                 <ContactFormSection />
               </section>
             </div>

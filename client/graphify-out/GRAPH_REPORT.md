@@ -1,16 +1,16 @@
-# Graph Report - client  (2026-10-15)
+# Graph Report - client  (2026-10-26)
 
 ## Corpus Check
-- 170 files · ~894,585 words
+- 171 files · ~896,111 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 1007 nodes · 1699 edges · 94 communities (57 shown, 37 thin omitted)
-- Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS · INFERRED: 6 edges (avg confidence: 0.85)
+- 1016 nodes · 1738 edges · 95 communities (55 shown, 40 thin omitted)
+- Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS · INFERRED: 7 edges (avg confidence: 0.85)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `424a44ac`
+- Built from commit: `6d40fdea`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -23,7 +23,7 @@
 - DiagnosticPlatform.tsx
 - Framework.tsx
 - field.tsx
-- src/App.tsx
+- TableOfContents.tsx
 - AIReadyWebsite.tsx
 - stickyHeader.ts
 - menubar.tsx
@@ -34,14 +34,14 @@
 - ThemeContext.tsx
 - TermsConditions.tsx
 - dropdown-menu.tsx
-- card.tsx
+- About.tsx
 - Resources.tsx
 - revenue-infrastructure-package/App.tsx
 - CanonicalDefinition.tsx
-- TableOfContents.tsx
+- AIVisibilityCall.tsx
 - utils.ts
 - carousel.tsx
-- form.tsx
+- Contact.tsx
 - HomeServices.tsx
 - buyer-journey-package/App.tsx
 - item.tsx
@@ -50,9 +50,9 @@
 - SuppliedVisualBlocks.tsx
 - chart.tsx
 - context-menu.tsx
-- glowy-waves-hero-shadcnui.tsx
+- drawer.tsx
 - AIVisibilityReview.tsx
-- GoogleBusinessProfileOptimizationReview.tsx
+- src/App.tsx
 - RevenueDiagnostic.tsx
 - NineDomainFramework.tsx
 - ChatWidget.tsx
@@ -61,6 +61,7 @@
 - SolutionsDigitalPresenceSection.tsx
 - AIVisibility.tsx
 - BuyerJourneyPlugAndPlayHost.tsx
+- popover.tsx
 - empty.tsx
 - ErrorBoundary.tsx
 - HomepageSectionSpacing.test.ts
@@ -106,15 +107,15 @@
 
 ## God Nodes (most connected - your core abstractions)
 1. `cn()` - 274 edges
-2. `SiteHeader()` - 33 edges
-3. `Seo()` - 31 edges
-4. `SiteFooter()` - 30 edges
-5. `TableOfContents()` - 23 edges
-6. `useReveal()` - 13 edges
-7. `Button()` - 12 edges
+2. `SiteHeader()` - 34 edges
+3. `Seo()` - 32 edges
+4. `SiteFooter()` - 31 edges
+5. `TableOfContents()` - 24 edges
+6. `Button()` - 13 edges
+7. `useReveal()` - 13 edges
 8. `buttonVariants` - 9 edges
 9. `useReveal()` - 8 edges
-10. `useDialogComposition()` - 6 edges
+10. `Input()` - 7 edges
 
 ## Surprising Connections (you probably didn't know these)
 - `AlertDialogOverlay()` --calls--> `cn()`  [EXTRACTED]
@@ -131,19 +132,19 @@
 ## Import Cycles
 - None detected.
 
-## Communities (94 total, 37 thin omitted)
+## Communities (95 total, 40 thin omitted)
 
 ### Community 0 - "sidebar.tsx"
 Cohesion: 0.06
 Nodes (40): Sheet(), SheetContent(), SheetDescription(), SheetFooter(), SheetHeader(), SheetOverlay(), SheetTitle(), Sidebar() (+32 more)
 
 ### Community 1 - "alert-dialog.tsx"
-Cohesion: 0.09
-Nodes (20): systemLayers, AlertDialogAction(), AlertDialogCancel(), AlertDialogContent(), AlertDialogDescription(), AlertDialogFooter(), AlertDialogHeader(), AlertDialogOverlay() (+12 more)
+Cohesion: 0.06
+Nodes (31): systemLayers, AlertDialogAction(), AlertDialogCancel(), AlertDialogContent(), AlertDialogDescription(), AlertDialogFooter(), AlertDialogHeader(), AlertDialogOverlay() (+23 more)
 
 ### Community 2 - "cn"
-Cohesion: 0.06
-Nodes (41): AccordionContent(), AccordionItem(), AccordionTrigger(), Avatar(), AvatarFallback(), AvatarImage(), BreadcrumbEllipsis(), BreadcrumbItem() (+33 more)
+Cohesion: 0.08
+Nodes (34): AccordionContent(), AccordionItem(), AccordionTrigger(), Avatar(), AvatarFallback(), AvatarImage(), BreadcrumbEllipsis(), BreadcrumbItem() (+26 more)
 
 ### Community 3 - "Solutions.tsx"
 Cohesion: 0.10
@@ -158,28 +159,24 @@ Cohesion: 0.13
 Nodes (22): ASSESSMENT_PRINCIPLES, AssessmentFamilySection(), AssessmentPrinciplesSection(), ASSESSMENTS, BeginDiagnosticSection(), DIAGNOSTIC_DOMAINS, DIAGNOSTIC_OUTPUTS, DIAGNOSTIC_QUESTIONS (+14 more)
 
 ### Community 6 - "Framework.tsx"
-Cohesion: 0.13
-Nodes (13): BusinessOutcomesSection(), DiagnosticCTASection(), DOMAIN_ICONS, DOMAINS, FragmentedVsConnectedSection(), Framework(), I, INFRA_X_POSITIONS (+5 more)
+Cohesion: 0.14
+Nodes (12): BusinessOutcomesSection(), DiagnosticCTASection(), DOMAIN_ICONS, DOMAINS, FragmentedVsConnectedSection(), I, INFRA_X_POSITIONS, PILLARS (+4 more)
 
 ### Community 7 - "field.tsx"
-Cohesion: 0.13
-Nodes (16): ButtonGroup(), ButtonGroupSeparator(), ButtonGroupText(), buttonGroupVariants, Field(), FieldContent(), FieldDescription(), FieldError() (+8 more)
+Cohesion: 0.16
+Nodes (12): Field(), FieldContent(), FieldDescription(), FieldError(), FieldGroup(), FieldLabel(), FieldLegend(), FieldSeparator() (+4 more)
 
-### Community 8 - "src/App.tsx"
-Cohesion: 0.11
-Nodes (6): App(), NOTE: About Theme, Toaster(), AIReadyWebsite(), CRMAutomation(), DiagnosticPlatform()
+### Community 8 - "TableOfContents.tsx"
+Cohesion: 0.12
+Nodes (6): getTocForPath(), PAGE_TOCS, PageToc, TableOfContents(), TocItem, CRMAutomation()
 
 ### Community 9 - "AIReadyWebsite.tsx"
-Cohesion: 0.12
-Nodes (4): APPROACH, CALL_STEPS, OUTCOMES, PROBLEMS
+Cohesion: 0.11
+Nodes (5): AIReadyWebsite(), APPROACH, CALL_STEPS, OUTCOMES, PROBLEMS
 
 ### Community 11 - "menubar.tsx"
 Cohesion: 0.12
 Nodes (11): Menubar(), MenubarCheckboxItem(), MenubarContent(), MenubarItem(), MenubarLabel(), MenubarRadioItem(), MenubarSeparator(), MenubarShortcut() (+3 more)
-
-### Community 12 - "FinancialAdvisors.tsx"
-Cohesion: 0.06
-Nodes (5): About(), DIAGNOSTIC_STEPS, EXPERIENCE_PILLARS, OPERATING_PRINCIPLES, FinancialAdvisors()
 
 ### Community 13 - "InsuranceAgencies.tsx"
 Cohesion: 0.12
@@ -193,9 +190,9 @@ Nodes (5): Theme, ThemeContext, ThemeContextType, ThemeProvider(), ThemeProvider
 Cohesion: 0.12
 Nodes (9): DropdownMenuCheckboxItem(), DropdownMenuContent(), DropdownMenuItem(), DropdownMenuLabel(), DropdownMenuRadioItem(), DropdownMenuSeparator(), DropdownMenuShortcut(), DropdownMenuSubContent() (+1 more)
 
-### Community 19 - "card.tsx"
-Cohesion: 0.24
-Nodes (8): Card(), CardAction(), CardContent(), CardDescription(), CardFooter(), CardHeader(), CardTitle(), NotFound()
+### Community 19 - "About.tsx"
+Cohesion: 0.12
+Nodes (4): About(), DIAGNOSTIC_STEPS, EXPERIENCE_PILLARS, OPERATING_PRINCIPLES
 
 ### Community 20 - "Resources.tsx"
 Cohesion: 0.12
@@ -209,29 +206,25 @@ Nodes (8): App(), CENTER_CAPABILITIES, LEFT_CONSEQUENCES, LEFT_TOOLS, PROCESS_ST
 Cohesion: 0.14
 Nodes (5): CanonicalDefinition(), ICON_PROPS, NODE_CXS, NOT_ITEMS, PILLARS
 
-### Community 23 - "TableOfContents.tsx"
-Cohesion: 0.13
-Nodes (7): getTocForPath(), PAGE_TOCS, PageToc, TableOfContents(), TocItem, AIVisibilityCallPage(), WHAT_EXPECT
-
 ### Community 24 - "utils.ts"
-Cohesion: 0.05
-Nodes (17): Badge(), badgeVariants, Checkbox(), DrawerContent(), DrawerDescription(), DrawerFooter(), DrawerHeader(), DrawerOverlay() (+9 more)
+Cohesion: 0.11
+Nodes (9): Badge(), badgeVariants, HoverCardContent(), Progress(), ResizableHandle(), ResizablePanelGroup(), Slider(), Spinner() (+1 more)
 
 ### Community 25 - "carousel.tsx"
 Cohesion: 0.19
 Nodes (13): Carousel(), CarouselApi, CarouselContent(), CarouselContext, CarouselContextProps, CarouselItem(), CarouselNext(), CarouselOptions (+5 more)
 
-### Community 26 - "form.tsx"
-Cohesion: 0.20
-Nodes (11): FormControl(), FormDescription(), FormFieldContext, FormFieldContextValue, FormItem(), FormItemContext, FormItemContextValue, FormLabel() (+3 more)
+### Community 26 - "Contact.tsx"
+Cohesion: 0.09
+Nodes (26): Checkbox(), FormControl(), FormDescription(), FormField(), FormFieldContext, FormFieldContextValue, FormItem(), FormItemContext (+18 more)
 
 ### Community 28 - "buyer-journey-package/App.tsx"
 Cohesion: 0.15
 Nodes (5): C, CARD_X, NODE_CARD, NODE_X, PARTICLES
 
 ### Community 29 - "item.tsx"
-Cohesion: 0.18
-Nodes (12): Item(), ItemActions(), ItemContent(), ItemDescription(), ItemFooter(), ItemGroup(), ItemHeader(), ItemMedia() (+4 more)
+Cohesion: 0.13
+Nodes (17): ButtonGroup(), ButtonGroupSeparator(), ButtonGroupText(), buttonGroupVariants, Item(), ItemActions(), ItemContent(), ItemDescription() (+9 more)
 
 ### Community 30 - "Home.tsx"
 Cohesion: 0.24
@@ -253,17 +246,17 @@ Nodes (9): ChartConfig, ChartContainer(), ChartContext, ChartContextProps, Chart
 Cohesion: 0.12
 Nodes (9): ContextMenuCheckboxItem(), ContextMenuContent(), ContextMenuItem(), ContextMenuLabel(), ContextMenuRadioItem(), ContextMenuSeparator(), ContextMenuShortcut(), ContextMenuSubContent() (+1 more)
 
-### Community 35 - "glowy-waves-hero-shadcnui.tsx"
-Cohesion: 0.38
-Nodes (3): Point, WaveConfig, HERO_PARALLAX_LAYERS
+### Community 35 - "drawer.tsx"
+Cohesion: 0.18
+Nodes (6): DrawerContent(), DrawerDescription(), DrawerFooter(), DrawerHeader(), DrawerOverlay(), DrawerTitle()
 
 ### Community 36 - "AIVisibilityReview.tsx"
 Cohesion: 0.18
 Nodes (3): AIVisibilityReview(), WHAT_EXPECT, Window
 
-### Community 37 - "GoogleBusinessProfileOptimizationReview.tsx"
-Cohesion: 0.18
-Nodes (3): GoogleBusinessProfileOptimizationReview(), WHAT_EXPECT, Window
+### Community 37 - "src/App.tsx"
+Cohesion: 0.10
+Nodes (9): App(), NOTE: About Theme, Toaster(), Contact(), DiagnosticPlatform(), Framework(), GoogleBusinessProfileOptimizationReview(), WHAT_EXPECT (+1 more)
 
 ### Community 38 - "RevenueDiagnostic.tsx"
 Cohesion: 0.18
@@ -338,24 +331,24 @@ Cohesion: 0.67
 Nodes (3): CAPABILITIES, highlight(), SolutionsLeadResponseSection()
 
 ## Knowledge Gaps
-- **163 isolated node(s):** `pageStyles`, `homeSource`, `hostSource`, `packageSource`, `pageStyles` (+158 more)
+- **167 isolated node(s):** `pageStyles`, `homeSource`, `hostSource`, `packageSource`, `pageStyles` (+162 more)
   These have ≤1 connection - possible missing edges or undocumented components.
-- **37 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
+- **40 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-- **Why does `cn()` connect `cn` to `sidebar.tsx`, `alert-dialog.tsx`, `chart.tsx`, `context-menu.tsx`, `dialog.tsx`, `field.tsx`, `navigation-menu.tsx`, `menubar.tsx`, `empty.tsx`, `ErrorBoundary.tsx`, `dropdown-menu.tsx`, `card.tsx`, `item.tsx`, `toggle-group.tsx`, `utils.ts`, `carousel.tsx`, `form.tsx`, `alert.tsx`?**
-  _High betweenness centrality (0.373) - this node is a cross-community bridge._
-- **Why does `Seo()` connect `SiteFooter.tsx` to `Solutions.tsx`, `DiagnosticPlatform.tsx`, `Framework.tsx`, `src/App.tsx`, `AIReadyWebsite.tsx`, `FinancialAdvisors.tsx`, `InsuranceAgencies.tsx`, `PrivacyPolicy.tsx`, `ConversionSystems.tsx`, `TermsConditions.tsx`, `card.tsx`, `Resources.tsx`, `TableOfContents.tsx`, `HomeServices.tsx`, `Home.tsx`, `AIVisibilityReview.tsx`, `GoogleBusinessProfileOptimizationReview.tsx`, `RevenueDiagnostic.tsx`, `Industries.tsx`, `AIVisibility.tsx`?**
-  _High betweenness centrality (0.039) - this node is a cross-community bridge._
-- **Why does `SiteHeader()` connect `SiteFooter.tsx` to `Solutions.tsx`, `DiagnosticPlatform.tsx`, `Framework.tsx`, `src/App.tsx`, `AIReadyWebsite.tsx`, `stickyHeader.ts`, `FinancialAdvisors.tsx`, `InsuranceAgencies.tsx`, `PrivacyPolicy.tsx`, `ConversionSystems.tsx`, `TermsConditions.tsx`, `Resources.tsx`, `TableOfContents.tsx`, `HomeServices.tsx`, `Home.tsx`, `AIVisibilityReview.tsx`, `GoogleBusinessProfileOptimizationReview.tsx`, `RevenueDiagnostic.tsx`, `Industries.tsx`, `AIVisibility.tsx`?**
-  _High betweenness centrality (0.029) - this node is a cross-community bridge._
+- **Why does `cn()` connect `cn` to `sidebar.tsx`, `alert-dialog.tsx`, `dialog.tsx`, `field.tsx`, `menubar.tsx`, `dropdown-menu.tsx`, `utils.ts`, `carousel.tsx`, `Contact.tsx`, `item.tsx`, `chart.tsx`, `context-menu.tsx`, `drawer.tsx`, `navigation-menu.tsx`, `popover.tsx`, `empty.tsx`, `ErrorBoundary.tsx`, `toggle-group.tsx`, `alert.tsx`?**
+  _High betweenness centrality (0.351) - this node is a cross-community bridge._
+- **Why does `Seo()` connect `SiteFooter.tsx` to `alert-dialog.tsx`, `Solutions.tsx`, `DiagnosticPlatform.tsx`, `Framework.tsx`, `TableOfContents.tsx`, `AIReadyWebsite.tsx`, `FinancialAdvisors.tsx`, `InsuranceAgencies.tsx`, `PrivacyPolicy.tsx`, `ConversionSystems.tsx`, `TermsConditions.tsx`, `About.tsx`, `Resources.tsx`, `AIVisibilityCall.tsx`, `Contact.tsx`, `HomeServices.tsx`, `Home.tsx`, `AIVisibilityReview.tsx`, `src/App.tsx`, `RevenueDiagnostic.tsx`, `Industries.tsx`, `AIVisibility.tsx`?**
+  _High betweenness centrality (0.036) - this node is a cross-community bridge._
+- **Why does `SiteHeader()` connect `SiteFooter.tsx` to `Solutions.tsx`, `DiagnosticPlatform.tsx`, `Framework.tsx`, `TableOfContents.tsx`, `AIReadyWebsite.tsx`, `stickyHeader.ts`, `FinancialAdvisors.tsx`, `InsuranceAgencies.tsx`, `PrivacyPolicy.tsx`, `ConversionSystems.tsx`, `TermsConditions.tsx`, `About.tsx`, `Resources.tsx`, `AIVisibilityCall.tsx`, `Contact.tsx`, `HomeServices.tsx`, `Home.tsx`, `AIVisibilityReview.tsx`, `src/App.tsx`, `RevenueDiagnostic.tsx`, `Industries.tsx`, `AIVisibility.tsx`?**
+  _High betweenness centrality (0.033) - this node is a cross-community bridge._
 - **What connects `pageStyles`, `homeSource`, `hostSource` to the rest of the system?**
-  _163 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _167 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `sidebar.tsx` be split into smaller, more focused modules?**
   _Cohesion score 0.05673758865248227 - nodes in this community are weakly interconnected._
 - **Should `alert-dialog.tsx` be split into smaller, more focused modules?**
-  _Cohesion score 0.09425287356321839 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.05920444033302498 - nodes in this community are weakly interconnected._
 - **Should `cn` be split into smaller, more focused modules?**
-  _Cohesion score 0.06015037593984962 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.07536231884057971 - nodes in this community are weakly interconnected._
