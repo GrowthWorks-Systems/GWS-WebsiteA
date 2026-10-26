@@ -17,7 +17,7 @@ function FooterLink({ href, children }: { href?: string; children: React.ReactNo
   const text = typeof children === "string" ? children : ""
   const resolvedHref = href || (
     text === "Book a Revenue Diagnostic" ? "/revenue-diagnostic" :
-    text === "Contact" ? "#" :
+    text === "Contact" ? "/contact" :
     text === "The Nine Domains" ? "/framework#nine-domain-framework" :
     text === "What Is Revenue Infrastructure?" ? "/framework#canonical-definition" :
     text === "Maturity Model" ? "/framework#revenue-maturity" :
@@ -37,9 +37,9 @@ function FooterLink({ href, children }: { href?: string; children: React.ReactNo
     "/"
   )
   const handleClick = () => {
-    if (resolvedHref === "#") return
-    window.scrollTo(0, 0)
-  }
+    if (resolvedHref === "#") return;
+    window.scrollTo(0, 0);
+  };
   return <Link href={resolvedHref} onClick={handleClick}>{children}</Link>;
 }
 

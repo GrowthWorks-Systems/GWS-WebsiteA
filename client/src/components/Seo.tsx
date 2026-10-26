@@ -109,6 +109,11 @@ export const PAGE_SEO: Record<string, { title: string; description: string; cano
     description: "GrowthWorks Systems was founded by Clayton Tidwell to help founder-led service businesses build the connected systems that turn opportunity into predictable revenue.",
     canonical: "/about",
   },
+  "/contact": {
+    title: "Contact — GrowthWorks Systems",
+    description: "Contact GrowthWorks Systems to discuss your revenue infrastructure. Send us a message and a team member will follow up promptly.",
+    canonical: "/contact",
+  },
   "/meet-the-team": {
     title: "Meet the Team — GrowthWorks Systems",
     description: "The leadership team behind GrowthWorks Systems. Leigh Tidwell (CRO), Clayton Tidwell (Founder), John Baylon (Operations Lead), and Jhed Serrano (Lead Developer).",

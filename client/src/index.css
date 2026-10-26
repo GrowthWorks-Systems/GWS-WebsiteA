@@ -179,6 +179,60 @@
   box-sizing: border-box;
 }
 
+/* Required field asterisks: dark maroon */
+.form-label span[aria-hidden="true"] {
+  color: #721315;
+}
+
+/* Form fields: thin border in a darker grey */
+input,
+textarea,
+select {
+  border: 0.5px solid #9ca3af;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  border: 0.5px solid #6b7280;
+  outline: none;
+}
+
+input:active,
+textarea:active,
+select:active {
+  border-width: 0.5px;
+}
+
+/* Validation error messages: dark maroon instead of default red */
+[data-slot="form-message"] {
+  color: #721315;
+}
+
+/* ShadCN form controls and SelectTrigger: same thin border, dark grey on hover/active */
+.form-control,
+[data-slot="form-control"] {
+  border: 0.5px solid #9ca3af;
+  outline: none;
+}
+
+.form-control:focus,
+[data-slot="form-control"]:focus {
+  border: 0.5px solid #4b5563;
+  outline: none;
+  box-shadow: 0 0 0 1px #4b5563;
+}
+
+.form-control:hover,
+[data-slot="form-control"]:hover {
+  border: 0.5px solid #4b5563;
+}
+
+.form-control:active,
+[data-slot="form-control"]:active {
+  border-width: 0.5px;
+}
+
 html {
   scroll-behavior: smooth;
 }
